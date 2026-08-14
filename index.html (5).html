@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>草野善太｜書籍編集者ポートフォリオ — 弧牛忘路・編書牛事</title>
+<meta property="og:title" content="草野善太｜書籍編集者ポートフォリオ — 弧牛忘路・編書牛事">
+<meta property="og:description" content="人文・社会科学の学術書を中心に、教科書、思想・批評、心理・行動科学などの領域で編集・出版活動に従事する書籍編集者のポートフォリオ。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://minerva-kusano.github.io/kusano-profile/">
+<meta property="og:image" content="https://minerva-kusano.github.io/kusano-profile/OGP.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="草野善太｜書籍編集者ポートフォリオ">
+<meta name="twitter:description" content="人文・社会科学の学術書を中心に編集・出版活動に従事する書籍編集者のポートフォリオ。">
+<meta name="twitter:image" content="https://minerva-kusano.github.io/kusano-profile/OGP.png">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f5f3ef;color:#2a2a2a;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:15px;line-height:1.88}
+.W{max-width:760px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.site-header{border-bottom:2px solid #2a2a2a;padding-bottom:0.8rem;margin-bottom:1.5rem;overflow:hidden}
+h1{font-family:'Shippori Mincho',serif;font-size:22px;font-weight:500;color:#1a1a1a;letter-spacing:0.02em}
+.en-title{font-style:italic;font-size:13px;color:#666;margin-top:3px}
+.expand-all{float:right;font-size:12px;border:1px solid #1f5c20;color:#1f5c20;background:none;padding:3px 10px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;margin-top:4px}
+.expand-all:hover{background:#1f5c20;color:#fff}
+.intro-wrap{display:flex;gap:1.5rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #d0ccc5;align-items:stretch}
+.intro-left{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:space-between}
+.lead{font-size:14.5px;line-height:1.95;margin-bottom:0.9rem}
+.toc{background:#edecea;padding:0.7rem 1rem;font-size:13px}
+.toc-title{font-family:'Shippori Mincho',serif;font-size:13px;font-weight:500;margin-bottom:0.3rem}
+.toc ol{padding-left:1.2em;line-height:2}
+.toc a{color:#1f5c20;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.profile-card{width:200px;flex-shrink:0;font-size:12.5px;display:flex;flex-direction:column}
+.profile-img{width:100%;aspect-ratio:1;background:#ddd8d0;display:flex;align-items:center;justify-content:center;color:#999;font-size:12px;border:1px solid #ccc8c0;margin-bottom:0.6rem}
+.profile-img img{width:100%;height:100%;object-fit:cover;display:block}
+.profile-card table{width:100%;border-collapse:collapse}
+.profile-card th{text-align:left;color:#777;font-weight:400;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;font-size:11.5px;width:3.5em}
+.profile-card td{padding:3px 0;vertical-align:top;font-size:12px;line-height:1.6}
+.profile-card .sec{font-family:'Shippori Mincho',serif;font-size:11px;color:#aaa;padding-top:8px;font-weight:400}
+details.outer{border-bottom:1px solid #d0ccc5}
+details.outer>summary{font-family:'Shippori Mincho',serif;font-size:17px;font-weight:500;color:#1f5c20;cursor:pointer;padding:0.65rem 0;list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+details.outer>summary::-webkit-details-marker{display:none}
+details.outer>summary::before{content:'▶';font-size:10px;color:#1f5c20;transition:transform 0.2s;display:inline-block;flex-shrink:0}
+details.outer[open]>summary::before{transform:rotate(90deg)}
+.outer-body{padding:0.4rem 0 1.2rem 1rem;font-size:14px;line-height:1.95}
+.placeholder-text{color:#aaa;font-size:13px;font-style:italic}
+.history-text{font-size:14px;line-height:2;color:#2a2a2a}
+.history-text p{margin-bottom:1em}
+.history-text p:last-child{margin-bottom:0}
+.history-text a{color:#1f5c20;text-decoration:none;border-bottom:1px solid #a8c8a8}
+.history-text a:hover{border-bottom-color:#1f5c20}
+.work-label{display:inline-block;font-size:11px;background:#1f5c20;color:#fff;padding:1px 7px;margin-bottom:0.5rem}
+.work-label.prep{background:#888}
+.genre-tag{display:inline-block;font-size:10px;border:1px solid #aaa;color:#777;padding:0 5px;white-space:nowrap;line-height:1.7;flex-shrink:0}
+details.book{border:1px solid #d0ccc5;background:#faf9f7;margin-bottom:0.6rem}
+details.book:last-child{margin-bottom:0}
+details.book>summary{display:flex;align-items:center;gap:8px;padding:0.55rem 0.8rem;cursor:pointer;list-style:none;user-select:none}
+details.book>summary::-webkit-details-marker{display:none}
+.book-arrow{font-size:10px;color:#1f5c20;transition:transform 0.2s;flex-shrink:0}
+details.book[open] .book-arrow{transform:rotate(90deg)}
+.book-title-text{font-family:'Shippori Mincho',serif;font-size:15px;font-weight:500;color:#1a1a1a;flex:1}
+.book-tags{display:flex;gap:4px;flex-wrap:wrap}
+.book-body{border-top:1px solid #e8e4de;padding:0.9rem 1rem;display:flex;flex-direction:column;gap:0.9rem}
+.book-top{display:flex;gap:0.8rem;align-items:stretch}
+.book-biblio{flex:1;font-size:12.5px;color:#666;line-height:1.85}
+.book-obi{flex:1;font-size:12px;line-height:2;color:#333;font-family:'Shippori Mincho',serif;border-left:2px solid #1f5c20;border-right:1px solid #e0ddd8;padding:0 0.7rem;display:flex;align-items:center}
+.book-obi-inner{width:100%}
+.book-cover{flex-shrink:0;width:88px;display:flex;align-items:flex-start}
+.book-cover img{width:100%;display:block;border:1px solid #ccc8c0;box-shadow:2px 2px 6px rgba(0,0,0,0.12)}
+.book-cover-placeholder{width:100%;aspect-ratio:2/3;background:#ddd8d0;border:1px solid #ccc8c0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#aaa;text-align:center;line-height:1.5}
+.book-description{font-size:13.5px;line-height:1.95;color:#2a2a2a;padding-top:0.8rem;border-top:1px dotted #ddd8d0}
+details.afterword{border:none;border-top:1px dotted #c8c4bc;margin-top:0}
+details.afterword>summary{font-family:'Shippori Mincho',serif;font-size:13px;font-weight:500;color:#888;cursor:pointer;padding:0.5rem 0;list-style:none;display:flex;align-items:center;gap:6px;user-select:none}
+details.afterword>summary::-webkit-details-marker{display:none}
+.aw-arrow{font-size:9px;color:#aaa;transition:transform 0.2s;flex-shrink:0}
+details.afterword[open] .aw-arrow{transform:rotate(90deg)}
+.afterword-body{padding:0.8rem 0 0.4rem;font-size:13.5px;line-height:2.1;color:#2a2a2a;font-family:'Shippori Mincho',serif}
+.afterword-body p{margin-bottom:1.2em}
+.afterword-body p:last-child{margin-bottom:0}
+.afterword-body .divider{text-align:center;color:#aaa;margin:1.2em 0;letter-spacing:0.5em}
+.afterword-body .footnotes{font-size:12px;color:#888;margin-top:1.5em;padding-top:0.8em;border-top:1px dotted #ddd8d0;line-height:2}
+sup{font-size:0.7em;vertical-align:super;line-height:0}
+.book-buy{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding-top:0.8rem;border-top:1px dotted #ddd8d0}
+.buy-btn{display:block;font-size:11.5px;text-align:center;padding:6px 4px;text-decoration:none;border:1px solid #c0bbb4;color:#2a2a2a;background:#f5f3ef;line-height:1.4}
+.buy-btn:hover{background:#edecea;border-color:#999}
+.buy-btn.primary{background:#1f5c20;color:#fff;border-color:#1f5c20}
+.buy-btn.primary:hover{background:#174d18}
+.writing-section{margin-bottom:1.4rem}
+.writing-section:last-child{margin-bottom:0}
+.writing-section-title{font-family:'Shippori Mincho',serif;font-size:13px;color:#1f5c20;border-bottom:1px solid #c8d8c8;padding-bottom:3px;margin-bottom:0.6rem;font-weight:500}
+.writing-item{margin-bottom:0.9rem;padding-bottom:0.9rem;border-bottom:1px dotted #ddd8d0}
+.writing-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.writing-year{font-size:11px;color:#999;margin-bottom:2px}
+.writing-title{font-size:13.5px;color:#2a2a2a;line-height:1.7}
+.writing-affil{font-size:12px;color:#888;margin-top:2px;line-height:1.6}
+.writing-placeholder{font-size:12.5px;color:#bbb;font-style:italic}
+hr{border:none;border-top:2px solid #2a2a2a;margin:1.8rem 0}
+.fragment-list{list-style:none;padding:0}
+.fragment-item{padding:0.8rem 0;border-bottom:1px dotted #c8c4bc;font-size:14px;line-height:1.85}
+.fragment-item:last-child{border-bottom:none}
+.fragment-date{font-size:11px;color:#999;margin-bottom:3px}
+.fragment-placeholder{color:#aaa;font-size:13px;font-style:italic}
+
+@media (max-width: 600px){
+  .W{padding:1.2rem 1rem 3rem}
+  .intro-wrap{flex-direction:column-reverse}
+  .profile-card{width:100%;flex-direction:row;gap:1rem}
+  .profile-img{width:120px;flex-shrink:0;aspect-ratio:auto}
+  .profile-img img{width:100%;height:auto}
+  .book-buy{grid-template-columns:repeat(2,1fr)}
+  .book-cover{width:100px}
+  h1{font-size:19px}
+}
+</style>
+</head>
+<body>
+<div class="W">
+
+<div class="site-header">
+  <button class="expand-all" onclick="toggleAll(this)">▼ すべて展開</button>
+  <div style="font-size:11px;color:#999;margin-bottom:0.3rem">最終更新：2026年8月13日</div>
+  <h1>弧牛忘路――編書牛事</h1>
+  <div class="en-title">Lost Bull, Wandering On: a bull's work, grazing on words</div>
+</div>
+
+<div class="intro-wrap">
+  <div class="intro-left">
+    <p class="lead">草野善太（くさの・ぜんた、1987年－）は、日本の書籍編集者。人文・社会科学の学術書を中心に、教科書、思想・批評、心理・行動科学などの領域で編集・出版活動に従事している。</p>
+    <div class="toc">
+      <div class="toc-title">目次</div>
+      <ol>
+        <li><a href="#works">担当書籍</a></li>
+        <li><a href="#editing-philosophy">編集についての考え方・取り組み</a></li>
+        <li><a href="#history">来歴</a></li>
+        <li><a href="#interests">関心領域と遍歴</a></li>
+        <li><a href="#writing">書いたもの・話したこと</a></li>
+        <li><a href="#fragments"><ruby>牟言芻鳴<rt>ぼうげんすうめい</rt></ruby></a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="profile-card">
+    <div class="profile-img"><img src="profile.jpeg" alt="草野善太"></div>
+    <table>
+      <tr class="sec"><td colspan="2">基本情報</td></tr>
+      <tr><th>生年</th><td>1987年、福島県生まれ</td></tr>
+      <tr><th>肩書</th><td>書籍編集者</td></tr>
+      <tr><th>所属</th><td>ミネルヴァ書房 編集部</td></tr>
+      <tr><th>担当</th><td>人文系学術書籍</td></tr>
+      <tr class="sec"><td colspan="2">関心領域</td></tr>
+      <tr><th></th><td>言語／思想／政治理論／宗教／進化心理学</td></tr>
+    </table>
+  </div>
+</div>
+
+<div style="font-size:12.5px;line-height:1.9;color:#555;margin-bottom:1.5rem;padding:0.8rem 1rem;background:#edecea;border-left:2px solid #1f5c20">
+  <p style="font-weight:500;color:#1a1a1a;margin-bottom:0.4rem">研究者・著者の方へ</p>
+  <p style="margin-bottom:0.6rem">書籍企画のご相談を受け付けています。研究成果の書籍化、博士論文の出版、教科書・一般書の企画など、まずはお問い合わせフォームからご連絡ください。</p>
+  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScdKtvg4ISGJMq74NKJ5n2lgfdLni5r_qtwsBBkKr1AJlvNTw/viewform?usp=header" style="display:inline-block;font-size:12px;border:1px solid #1f5c20;color:#1f5c20;padding:5px 14px;text-decoration:none;" target="_blank">お問い合わせフォーム</a></p>
+</div>
+
+<div style="font-size:13px;line-height:2;color:#2a2a2a;margin-bottom:1.5rem">
+  <p style="font-family:'Shippori Mincho',serif;font-size:14px;font-weight:500;color:#1f5c20;margin-bottom:0.3rem">現在、企画として関心がある主題</p>
+  <p style="font-size:11.5px;color:#888;margin-bottom:0.5rem">※下記に限らず、人文・社会科学領域の書籍企画について広くご相談ください。</p>
+  <p>①〈声〉を主題とした研究書、批評、教科書——様態的存在論序説<br>②生成AI時代の「文体練習」——もうすぐ絶滅するという翻訳という営みについて<br>③マルクス、フロイト、ニーチェ――近代啓蒙の底が抜けた力の時代<br>④規範理論——ポスト構造主義フェミニズムの理論的達成（と後退）<br>⑤差別なき文化の（不）可能性——暴力（欲動）を社会的に処理する方途の模索</p>
+</div>
+
+<details class="outer" id="works">
+  <summary>担当書籍</summary>
+  <div class="outer-body">
+    <div style="margin-bottom:0.4rem"><span class="work-label">刊行（2026年～）</span></div>
+    <details class="book">
+      <summary><span class="book-arrow">▶</span><span class="book-tags"><span class="genre-tag">教科書</span></span><span class="book-title-text">進化心理学概説</span></summary>
+      <div class="book-body">
+        <div class="book-top">
+          <div class="book-biblio">中西大輔［著］<br>A5判・並製・336ページ<br>本体価格3,200円（+税）<br>2026年4月24日発売<br>ISBN：9784623100125</div>
+          <div class="book-cover"><img src="進化心理学概説装幀.gif" alt="進化心理学概説 装幀"></div>
+        </div>
+        <div class="book-description"><p style="font-size:15px;font-weight:600;line-height:1.8;margin-bottom:0.6rem;color:#1a1a1a;font-family:'Shippori Mincho',serif">その感情には、数万年の理由がある。恋も裏切りも協力も──進化が仕込んだ心の設計図を読み解く</p>なぜ人は愛し、嫉妬し、助け合い、時に裏切るのか。進化という視点から人間の心と行動を読み解く「進化心理学」は、心理学のなかでも新興の、しかし急速に発展を遂げている分野である。俗流の言説が先行しがちなこの分野において、性淘汰・利他性・感情・文化・脳の進化まで全体像を網羅し、単著で描ききった、研究者から学部生まで手に取れる待望の一冊。</div>
+        <details class="afterword">
+          <summary><span class="aw-arrow">▶</span>編集後記</summary>
+          <div class="afterword-body">
+            <p>「ああ、君か。」ノックの先から聞こえてきた最初の一言に、転学部を決めていた心はその強張りを増す。眼鏡とともにかきあげられた前髪、そのあと向けられた眼差しに圧迫はなく、さりながら計りがたさを湛え、逸らされることはなかった。</p>
+            <p>「教養学部に転学したく、署名のご依頼にあがりました」</p>
+            <p>「どうして？」</p>
+            <p>応じて話したことの記憶はなく、しかし、一息挟んでの語り出しはありありと蘇る。</p>
+            <p>「民というのは、ちゃんと食にありつくことができれば幸せなんですよ。そうそう、だからこそ統治というのはね...」</p>
+            <p>ためにするでもなく、こちらを咎めるでもなく、まして親密さのふりをするでもなく、とまれ中国その他の古典を引きながら、統治や制度、慣習や習俗といった事どもが朗々と語られる。それぞれは小難しくもなく、平明な言葉であるのに、諳んじて引かれる文言をつゆほども知らず、いや、だからというべきか、さて、何を言っているのか。分子生物学者が古今東西の古典を縦横にひき紡ぐ、ささやかな、しかし確固たる語り口に、驚く。</p>
+            <p>署名の入った書類を受け取る。去り際、ドアに手を伸ばす私の背後から声がかかる。「きみ、この分野もぼくの指導も、気に入らなかったろう。まあ、学ぶとよいですよ。」</p>
+            <p>比べて少なくない時間が、ドアを閉めてから流れた。惰性と怠慢とに運ばれつつ、埼玉から京都へ。挙句の編集という机で、名も忘れてしまったこの先生のことを思い出す。</p>
+            <p>先生、あの中国の古典は、『十八史略』の鼓腹撃壌のことですよね。モンテスキューの『法の精神』にも、「われわれをあるがままでいさせてほしいものだ」という一節があって、そうそう、あのあと私は京都にいって、18世紀のフランスの思想家たちを学んだりしたんですよ。法に何ができるのかというより、法に何ができないのかということ、いかに統治が重層的に決定されているか、もって専制を退けようと考えた彼は、なかでも18世紀最高の知性との評価もあります。進化心理学も、そうした重層性の一角を照らしているのかもしれないと思ったのです。先生は――</p>
+            <p>聞いてみたいこと、話してみたいことが、尽きず脳裏を駆ける。</p>
+            <p>「でもきみ、この分野もぼくの指導も、気に入らなかったろう」。</p>
+            <p>そんなことはない、あなたに最後学べてよかった。去り際のドアの隙間から、そう返すこともできたはずだった。いまやそれは、手遅れの隔たりのなかに沈んでゆくばかりなのだけれど。</p>
+            <div class="divider">＊＊＊</div>
+            <p>一度は捨てた学問分野に、斜交いながら接するものを上梓することになるとは、何の因果か。まして、自社への納品が四月の一日となれば、何かに化かされているのではないか、とも。</p>
+            <p>並行して担当している企画は数あるなかで、結局これが先んじたことは、偶然といえば偶然に過ぎず、それでもいささかの因縁を感じずにはいられない。それは否定すべくもない、私の人生の何がしかの帰結なのだと思う。</p>
+            <p>「誰があなたに何を言い、何を言わなかったのか。あなたは何を感じ、何を感じなかったのか」<sup>＊2</sup>、そのすべてがいつぞやかあなたに去来し、来し方の思いなしを組み替え、踏み出す行く末の足元をなす。「由来はそれでも未来に名残る」<sup>＊3</sup>。さればこそ、「過去に触れるときに吹く風は、希望の約束である」<sup>＊4</sup>ことを願う。</p>
+            <div class="footnotes">
+              <sup>＊2</sup>　ヤマシタトモコ『違国日記』<br>
+              <sup>＊3</sup>　ハイデガー『杣道』<br>
+              <sup>＊4</sup>　田中純『過去に触れる』
+            </div>
+          </div>
+        </details>
+        <div class="book-buy">
+          <a href="https://www.minervashobo.co.jp/book/b673216.html" class="buy-btn primary" target="_blank">ミネルヴァ書房</a>
+          <a href="https://amzn.asia/d/04O990oN" class="buy-btn" target="_blank">Amazon</a>
+          <a href="https://books.rakuten.co.jp/rb/18512974/" class="buy-btn" target="_blank">楽天ブックス</a>
+          <a href="https://www.hanmoto.com/bd/isbn/9784623100125" class="buy-btn" target="_blank">版元ドットコム</a>
+        </div>
+      </div>
+    </details>
+
+    <div style="margin-top:1.2rem;margin-bottom:0.4rem"><span class="work-label prep">準備中</span></div>
+<details class="book">
+      <summary><span class="book-arrow">▶</span><span class="book-tags"><span class="genre-tag">教科書</span><span class="genre-tag">一般書</span></span><span class="book-title-text">未来思考をはじめる――読み、描き、つくる10の技法</span></summary>
+      <div class="book-body">
+        <div class="book-top">
+          <div class="book-biblio">上月翔太［著］<br>A5判・並製・208ページ<br>本体価格2,200円（+税）<br>2026年9月15日発売<br>ISBN：9784623101078</div>
+          
+          <div class="book-cover"><img src="未来思考装幀.gif" alt="未来思考をはじめる 装幀"></div>
+        </div>
+        <div class="book-description"><p style="font-size:15px;font-weight:600;line-height:1.8;margin-bottom:0.6rem;color:#1a1a1a;font-family:'Shippori Mincho',serif">将来を考えろと多くの人は言う。けれど厄介なのは、そのための方法を誰も教えてくれないことだ</p>未来の課題はやっかいだ。正解がなく、善悪も問われ、捉え方によって解決策が変わり、間違えば取り返しがつかなくなる。エビデンス・ベースの未来予測はディストピアばかり、かといって素朴に明るすぎる未来を信じられるわけでもない。欲しいのは、虚勢でも閉塞でもない未来、平熱で考える望ましい未来だ。そのための思考法を体系的にまとめた、はじまりの一冊――それでもこの世界で生きていく、すべての人へ。</div>
+        <details class="afterword">
+          <summary><span class="aw-arrow">▶</span>編集後記</summary>
+          <div class="afterword-body">
+            <p style="color:#aaa;font-size:13px;font-style:italic">（後日追加）</p>
+          </div>
+        </details>
+        <div class="book-buy">
+          <a href="https://www.minervashobo.co.jp/book/b677069.html" class="buy-btn primary" target="_blank">ミネルヴァ書房</a>
+          <a href="https://amzn.asia/d/0gLasc4N" class="buy-btn" target="_blank">Amazon</a>
+          <a href="https://books.rakuten.co.jp/rb/18704843/?l-id=search-c-item-img-01" class="buy-btn" target="_blank">楽天ブックス</a>
+          <a href="https://www.hanmoto.com/bd/isbn/9784623101078" class="buy-btn" target="_blank">版元ドットコム</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="book">
+      <summary><span class="book-arrow">▶</span><span class="book-tags"><span class="genre-tag">専門書</span><span class="genre-tag">博論</span></span><span class="book-title-text">デカルトの道徳論</span></summary>
+      <div class="book-body">
+        <div class="book-top">
+          <div class="book-biblio">A5判・上製・352ページ<br>2026年12月刊行予定</div>
+          <div class="book-cover"><div class="book-cover-placeholder">装幀<br>画像</div></div>
+        </div>
+        <div class="book-description"><p style="font-size:15px;font-weight:600;line-height:1.8;margin-bottom:0.6rem;color:#1a1a1a;font-family:'Shippori Mincho',serif">こんなに人間らしいデカルトを、見たことがあるだろうか――。</p>明晰判明、理性の人として知られるデカルトが、悲嘆におしひしがれ、心労に疲弊しているなかでも、主体が持つ身体への信頼を、道徳において語る。それは、知の探究とそれに基づく主体の変容だけではなく、生きられた層に堆積された時間の厚みのなかで、魂の平静を求め、感覚に微睡み満足することを目指す、道徳の哲学であった。<br>本書は、これまで等閑視されがちであったデカルトの道徳哲学を、著作のみならず書簡を精緻に読解することで再構成し、これまでの定説を覆す。そう、たしかに「デカルトはそんなこと言ってない」。形而上学者でもなく、自然学者でもない、道徳哲学者デカルトの姿が、ついに描きだされる。</div>
+      </div>
+    </details>
+
+    <details class="book">
+      <summary><span class="book-arrow">▶</span><span class="book-tags"><span class="genre-tag">教科書</span></span><span class="book-title-text">ミネルヴァ・カルティヴァ ライブラリー</span></summary>
+      <div class="book-body">
+        <div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div>
+        <details class="afterword" style="margin-top:0.5rem">
+          <summary><span class="aw-arrow">▶</span>コンセプトノート</summary>
+          <div class="afterword-body">
+            <p style="color:#aaa;font-size:13px;font-style:italic">（詳細後日）</p>
+          </div>
+        </details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">法的思考へのログイン――トピックから学ぶリーガルマインド</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">しくみが見える憲法学——日常の憲法問題を掘り起こす</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">しくみが見える法学——くらしに法を透かし見る</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">しくみが見える企業法——会社を動かすルールとは</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">しくみが見える経済学——身の回りから大局へ</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">これからのスポーツと健康を科学する</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">新しいスポーツ社会学をひらく</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      <details class="book" style="margin-left:1rem"><summary><span class="book-arrow">▶</span><span class="book-title-text">これからの起業を科学する――アントレプレナーシップ入門</span></summary><div class="book-body"><div class="book-top"><div class="book-biblio" style="color:#888">詳細後日</div></div></div></details>
+      </div>
+    </details>
+
+            <details class="book">
+      <summary><span class="book-arrow">▶</span><span class="book-tags"><span class="genre-tag">専門書</span><span class="genre-tag">翻訳</span></span><span class="book-title-text">ミネルヴァ・モダンクラシックス叢書</span></summary>
+      <div class="book-body">
+        <div class="book-top">
+          <div class="book-biblio" style="color:#888">全10巻｜A5判・上製<br>2027年夏以降の刊行開始を目指して準備中</div>
+          
+        </div>
+        <div class="book-description">本叢書は、いまだ邦訳がない戦後の古典的名著の翻訳、あるいは絶版既訳の改訳新版での提供を通じて、近代的なもの、戦後的なものを構成してきた概念や構造を問い直すために設計された。とりわけ近代や主体と制度をめぐる概念装置に問いの照準は定められている。ゆえにこそ、「重要な古典の蓄積」のみをその意義として限るつもりはむろんなく、近代的なもの、戦後的なものの何をどう継承し、または清算するのか、できるのかが問われうる場として提示する。本叢書がなければ並び立つはずもなかった書と訳者と読者が、新たな知を紬ぐ一助となることを目指す。</div>
+      
+                                                            </div>
+    </details>
+
+                <p style="font-size:13px;color:#888;margin-top:1.2rem;margin-bottom:0.4rem">その他準備中</p>
+
+  </div>
+</details>
+
+<details class="outer" id="editing-philosophy">
+  <summary>編集についての考え方・取り組み</summary>
+  <div class="outer-body">
+    <p style="font-size:14px;line-height:2;margin-bottom:1.2rem">書籍企画を考える際、私は「必然性・社会性・資産性」という三つの軸を意識しています。なぜこの著者がこの本を書くのかという過去からの必然、いまの学術や社会にどう介入するのかという現在性、そして刊行後に著者・出版社・読者それぞれに何を残すのか、そしてその本で何をしていくのか、何がなされていってほしいか、何と接続されていってほしいか、という未来への持続性です。これらを著者・出版社・読者の三つの立場から考え、九つの観点から企画の輪郭を探ります。そのうえで、研究の核を損なわず専門領域の外へ射程を開き、書名、構成、目次、文章へと「読む理由」を具体化していくことを、編集の仕事だと考えています。</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.8;margin-bottom:0.5rem">
+      <thead>
+        <tr>
+          <th style="border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;width:15%"></th>
+          <th style="border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;text-align:center;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20">必然性（過去）</th>
+          <th style="border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;text-align:center;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20">社会性（現在）</th>
+          <th style="border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;text-align:center;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20">資産性（未来）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20">著者</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">これを書かざるをえない経緯があるか</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">学術的・社会的文脈に応答しているか</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">今後の研究キャリアを長く育むものか</td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20">出版社</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">刊行実績や理念と深く結びついているか</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">社会的議題に介入しうる力があるか</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">今後利益・評価・ブランド強化になるか</td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20">読者</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">自分の問題として引き受けざるをえないか</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">社会の見方を変えるきっかけになるか</td>
+          <td style="border:1px solid #c0bbb4;padding:6px 8px">参照され読み返され続ける価値があるか</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top:1.5rem;font-size:14px;line-height:2">
+      <p style="margin-bottom:1em">また、「紙の本」という形式については次のようなことも考えています（2026年6月の投稿から）。</p>
+      <p>　紙の印刷物を束ねた「本」という形式は、それ自体がひとつのオブジェクトだが、その実、本文（内容）や装幀、紙それ自体、印刷から製本、さまざまなオブジェクト（系）が束ねられているものでもある。まったく別の文脈で自律的に制作された系と系を接続ないし衝突させたところからまた面白いモノがでてくるかもしれない。そもそも「本」というのものが内包していた各オブジェクトの自律性を前景化させ（とはいえ本やシリーズの内容やコンセプトととまったく関係がないわけではないのは当然そうしないといけないけど）、新たな価値づけや別の読解可能性などを拓いていく試みにできないだろうか。たとえば装幀についていえば、作家自身が言葉にするのはもちろんよし（制作のみならず文章化にも関心がある人を探したいし、そういう存在になるきっかけにしてもらうでもよし）、あるいはキュレーターが添えた言葉でもいい（作家自身がキュレーションを兼ねるならそれはそれでよい）。とりわけシリーズの場合、装幀について、それぞれに割り当てられた巻の内容とその人の作品とが孕みうる意外な関係性や共鳴性みたいなのを文章にしてもらったら、それはそれで面白いと思った。そういうのが全十巻分、合計10本の記事ができたら、立派な連載企画になるだろう、とも。こうして、ひとつのシリーズに対して、本文をめぐるオブジェクト（訳者解説の一部公開）、装幀をめぐるオブジェクト（作家あるいはキュレーターによる文章）、さらには書評というオブジェクト（これはどちらかというと本文＝内容をめぐるオブジェクトに近いものだけど、訳者ではない読者という点で異なる）、といった複数のオブジェクトを可視化・前景化し、それぞれのオブジェクトを連載などの形でまとめて提示することができたら――おもしろくないか？</p>
+    </div>
+  </div>
+</details>
+
+<details class="outer" id="history">
+  <summary>来歴</summary>
+  <div class="outer-body">
+    <div class="history-text">
+      <p>1987年福島県生まれ。2006年に埼玉大学理学部分子生物学科に入学後、2009－2010年にかけて美大予備校に通い、東京藝術大学への入学を志すも受験失敗。埼玉大学教養学部への転学準備中に東日本大震災で被災。一か月ほど被災地で過ごし埼玉に戻る。一年の休学を経て教養学部へ編入。同大教養学部を卒業後、2014年に京都大学大学院文学研究科博士前期課程（フランス語学フランス文学専攻）に入学。その間、参加した翻訳会で、<a href="https://www.kyoto-up.or.jp/books/9784814003785.html" target="_blank">フリードリヒ二世『反マキアヴェッリ論』</a>と<a href="https://www.kyoto-up.or.jp/books/9784814004027.html" target="_blank">ジャック・ネッケル『穀物立法と穀物取引について』</a>（いずれも共訳、京都大学出版会）にかかわった。</p>
+      <p>2020年に同大学院博士後期課程を中途退学。のち2021年秋にミネルヴァ書房へ入社し営業部に配属される。北陸・中四国・滋賀・京都エリアを担当。主に大学講義用の教科書営業で各エリアを巡回。その後2024年秋に編集部へ異動となり、現在に至る。</p>
+    </div>
+  </div>
+</details>
+
+<details class="outer" id="interests">
+  <summary>関心領域と遍歴</summary>
+  <div class="outer-body">
+
+    <details class="afterword">
+      <summary><span class="aw-arrow">▶</span>関心領域</summary>
+      <div class="afterword-body" style="padding:0.5rem 0">
+<svg width="100%" viewBox="0 0 680 860" role="img" style="max-width:100%;display:block">
+<title>草野善太の問題関心図</title>
+<style>
+.th{font-family:'Shippori Mincho','Hiragino Mincho ProN',serif;font-size:12.5px;fill:#1a1a1a;font-weight:500}
+.ts{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:10px;fill:#555}
+.tl{font-family:'Noto Sans JP',sans-serif;font-size:10.5px;fill:#333}
+.sep{stroke:#aaa;stroke-dasharray:4,3;stroke-width:0.8}
+
+@media (max-width: 600px){
+  .W{padding:1.2rem 1rem 3rem}
+  .intro-wrap{flex-direction:column-reverse}
+  .profile-card{width:100%;flex-direction:row;gap:1rem}
+  .profile-img{width:120px;flex-shrink:0;aspect-ratio:auto}
+  .profile-img img{width:100%;height:auto}
+  .book-buy{grid-template-columns:repeat(2,1fr)}
+  .book-cover{width:100px}
+  h1{font-size:19px}
+}
+</style>
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#1f5c20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- ① 情動・欲動（起点） -->
+<rect x="200" y="16" width="280" height="48" rx="8" fill="#fdf6ee" stroke="#c8a060" stroke-width="1"/>
+<text class="th" x="340" y="37" text-anchor="middle" dominant-baseline="central">情動・欲動</text>
+<text class="ts" x="340" y="53" text-anchor="middle" dominant-baseline="central">理性的にどうしようもないもの</text>
+
+<!-- ①→② -->
+<path d="M340 64 L340 108" fill="none" stroke="#888" stroke-width="1" marker-end="url(#arr)"/>
+<text class="ts" x="355" y="89" fill="#999">媒介・操作</text>
+
+<!-- ② 関心 interest（核心概念） -->
+<rect x="170" y="108" width="340" height="56" rx="10" fill="#ede9f8" stroke="#534AB7" stroke-width="1.5"/>
+<text class="th" x="340" y="130" text-anchor="middle" dominant-baseline="central" font-size="14">「関心 interest」</text>
+<text class="ts" x="340" y="149" text-anchor="middle" dominant-baseline="central">神学・美学・統治論・経済学が共有した媒介操作概念</text>
+
+<!-- ②→③思想史 -->
+<path d="M340 164 L340 208" fill="none" stroke="#534AB7" stroke-width="1" marker-end="url(#arr)"/>
+<text class="ts" x="356" y="189" fill="#888">思想史的変遷</text>
+
+<!-- ③ 脱-関心の感性学 -->
+<rect x="140" y="208" width="400" height="52" rx="10" fill="#ede9f8" stroke="#534AB7" stroke-width="1.2"/>
+<text class="th" x="340" y="229" text-anchor="middle" dominant-baseline="central">脱-関心の感性学</text>
+<text class="ts" x="340" y="246" text-anchor="middle" dominant-baseline="central">デュボス・ハチスン・ヒューム・スミス→ベンサム道徳論の再定位</text>
+
+<!-- ③→左右分岐 -->
+<path d="M240 260 L160 316" fill="none" stroke="#888" stroke-width="0.9" marker-end="url(#arr)"/>
+<path d="M440 260 L530 316" fill="none" stroke="#888" stroke-width="0.9" marker-end="url(#arr)"/>
+
+<!-- ④左：言語表象・視覚表象 -->
+<rect x="30" y="316" width="250" height="68" rx="8" fill="#e6f3ef" stroke="#0F6E56" stroke-width="1"/>
+<text class="th" x="155" y="338" text-anchor="middle" dominant-baseline="central">言語表象・視覚表象</text>
+<text class="ts" x="155" y="355" text-anchor="middle" dominant-baseline="central">主体化（主客の措定・疎隔）</text>
+<text class="ts" x="155" y="370" text-anchor="middle" dominant-baseline="central">世界化・世界の言語的分節</text>
+
+<!-- ④右：統治・法 -->
+<rect x="400" y="316" width="250" height="68" rx="8" fill="#f8ede9" stroke="#993C1D" stroke-width="1"/>
+<text class="th" x="525" y="338" text-anchor="middle" dominant-baseline="central">統治・法</text>
+<text class="ts" x="525" y="355" text-anchor="middle" dominant-baseline="central">情動・欲動の整流化</text>
+<text class="ts" x="525" y="370" text-anchor="middle" dominant-baseline="central">快苦の計算可能化</text>
+
+<!-- 左右→⑤通底（矢印を内側から中央へ） -->
+<path d="M280 352 Q340 352 400 352" fill="none" stroke="#534AB7" stroke-width="1" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+<text class="ts" x="340" y="345" text-anchor="middle" fill="#534AB7">通底</text>
+
+<!-- ④左→⑤ -->
+<path d="M155 384 L220 432" fill="none" stroke="#888" stroke-width="0.9" marker-end="url(#arr)"/>
+<!-- ④右→⑤ -->
+<path d="M525 384 L460 432" fill="none" stroke="#888" stroke-width="0.9" marker-end="url(#arr)"/>
+
+<!-- ⑤ 言語論と統治論の結節点 -->
+<rect x="140" y="432" width="400" height="56" rx="10" fill="#fdf6ee" stroke="#c8a060" stroke-width="1.2"/>
+<text class="th" x="340" y="453" text-anchor="middle" dominant-baseline="central">言語論と統治論の通底</text>
+<text class="ts" x="340" y="470" text-anchor="middle" dominant-baseline="central">脱-関心の統治論化／言語による快苦の間接的計算可能化</text>
+
+<!-- ⑤→⑥ -->
+<path d="M340 488 L340 532" fill="none" stroke="#888" stroke-width="0.9" marker-end="url(#arr)"/>
+
+<!-- ⑥ 存在論・フィクション論 -->
+<rect x="140" y="532" width="400" height="56" rx="10" fill="#ede9f8" stroke="#534AB7" stroke-width="1"/>
+<text class="th" x="340" y="553" text-anchor="middle" dominant-baseline="central">存在論・フィクション論</text>
+<text class="ts" x="340" y="570" text-anchor="middle" dominant-baseline="central">リアル／フィクション内破・「存在もフィクション的実体」</text>
+
+<!-- 区切り線 -->
+<line x1="20" y1="612" x2="660" y2="612" class="sep"/>
+<text class="ts" x="340" y="626" text-anchor="middle" fill="#999">現在の編集関心へ</text>
+
+<!-- ⑥→第3層（4ノード） -->
+<path d="M200 588 L100 660" fill="none" stroke="#aaa" stroke-width="0.7" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+<path d="M295 588 L260 660" fill="none" stroke="#aaa" stroke-width="0.7" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+<path d="M385 588 L430 660" fill="none" stroke="#aaa" stroke-width="0.7" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+<path d="M480 588 L590 660" fill="none" stroke="#aaa" stroke-width="0.7" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+
+<!-- 現在の編集関心4ノード -->
+<rect x="20" y="660" width="165" height="52" rx="8" fill="#e6f3ef" stroke="#0F6E56" stroke-width="0.8"/>
+<text class="th" x="103" y="679" text-anchor="middle" dominant-baseline="central">人間と動物</text>
+<text class="ts" x="103" y="696" text-anchor="middle" dominant-baseline="central">言語活動・声・欲望と幻想</text>
+
+<rect x="198" y="660" width="165" height="52" rx="8" fill="#ede9f8" stroke="#534AB7" stroke-width="0.8"/>
+<text class="th" x="280" y="679" text-anchor="middle" dominant-baseline="central">宗教・スピリチュアリティ</text>
+<text class="ts" x="280" y="696" text-anchor="middle" dominant-baseline="central">第三項・聖なるフィクション</text>
+
+<rect x="376" y="660" width="165" height="52" rx="8" fill="#f8ede9" stroke="#993C1D" stroke-width="0.8"/>
+<text class="th" x="458" y="679" text-anchor="middle" dominant-baseline="central">政治理論・現代思想</text>
+<text class="ts" x="458" y="696" text-anchor="middle" dominant-baseline="central">規範・権力・統治性</text>
+
+<rect x="554" y="660" width="110" height="52" rx="8" fill="#f0efee" stroke="#888780" stroke-width="0.8"/>
+<text class="th" x="609" y="679" text-anchor="middle" dominant-baseline="central">心理学</text>
+<text class="ts" x="609" y="696" text-anchor="middle" dominant-baseline="central">快苦の科学</text>
+
+<!-- 凡例 -->
+<rect x="20" y="740" width="10" height="10" rx="2" fill="#ede9f8" stroke="#534AB7"/>
+<text class="ts" x="36" y="748" dominant-baseline="central">言語・存在論系</text>
+<rect x="160" y="740" width="10" height="10" rx="2" fill="#e6f3ef" stroke="#0F6E56"/>
+<text class="ts" x="176" y="748" dominant-baseline="central">感性・身体系</text>
+<rect x="280" y="740" width="10" height="10" rx="2" fill="#f8ede9" stroke="#993C1D"/>
+<text class="ts" x="296" y="748" dominant-baseline="central">政治・規範系</text>
+<rect x="400" y="740" width="10" height="10" rx="2" fill="#fdf6ee" stroke="#c8a060"/>
+<text class="ts" x="416" y="748" dominant-baseline="central">媒介・結節点</text>
+<rect x="510" y="740" width="10" height="10" rx="2" fill="#f0efee" stroke="#888780"/>
+<text class="ts" x="526" y="748" dominant-baseline="central">展開・派生</text>
+</svg>
+        <div style="margin-top:1.4rem;font-size:13.5px;line-height:2;color:#2a2a2a;font-family:'Shippori Mincho','Hiragino Mincho ProN',serif">
+          <p style="font-weight:500;margin-bottom:0.8rem">「関心 interest」という問いについて</p>
+          <p style="margin-bottom:1em">学士論文「言語と快楽」（2013年、埼玉大学）は、ジェレミー・ベンサムの功利主義の基礎に、認識論的言語哲学としての「フィクション論」があることを論じる試みだった。しかしその前段には、「関心 interest」とは何か、という問いがある。</p>
+          <p style="margin-bottom:1em">17-18世紀において「関心」は、神学・美学・道徳論・統治論・経済学など（美学や経済学は当時において立ち上がりつつあるものであった）が共有する媒介概念だった。デュボスからハチスン、ヒューム、スミスを経てベンサムへと至る思想史的変遷のなかで、「関心」は情動や欲動——理性的にどうしようもないもの——を間接的に操作し整流化するための概念装置として機能してきた（そのようにみなされていた）。学士論文で「脱-関心の感性学」と呼んだのは、こうした「関心」の媒介操作的な性格を、美学と政治哲学の接点において捉え返す試みだった。</p>
+          <p style="margin-bottom:1em">言語は、この操作において中枢的な役割を果たす。言語表象（および視覚表象）は、主体化と世界化を同時に開設する。ジャック・ラカン的に言えば、生後まもなく経験される鏡像段階において、子どもは鏡に映った像を「これは私だ」と認知しつつ「しかしこれは私ではない（像は左右が反転した外部の他者だ）」という矛盾を同時に飲み込むことで、自己と他者を分節し始める。この瞬間、言語表象と視覚表象が協働して作用し、世界は統語的に整除されたものとして立ち現れる。主客の分離、三者関係の理解、根拠律や因果律による世界把握の構造が、ここからはじまる。</p>
+          <p style="margin-bottom:1em">しかしこの主体化は完全ではない。疎隔において何かが零れ落ちる。「本当にこれが私なのか」という不信は消えることがない。欲動や情動、ラカンが「現実界」と呼ぶものは、この零れ落ちたものとして、言語と統治による操作の外部に残り続ける。「関心」概念の思想史とは、この操作しきれない過剰を間接的に手懐けようとする知的格闘の歴史でもあったのではないか。アナクロニズムの誹りを免れないが、本稿を駆動していた裏の仮説がこれであった。</p>
+          <p style="margin-bottom:1em">ベンサムにとって言語論と統治論が通底していたのは、なにより正確な法治を実現するためであったが、いかに情動・欲動を「関心」を媒介に整流化するか——そのために言語表象をかませることで快苦を計算可能にしようとすることが企図としてあったことも見逃せない。そして「存在もフィクション的実体である」というフィクション論の逆説は、この言語操作の徹底として読めるのではないか、というのが本稿が提示する一つのテーゼである。</p>
+          <p>現在の編集関心——人間と動物の境界、言語論、宗教と法、政治理論と現代思想、心理学と行動科学——は、いずれもこの問いの延長線上にある。言語と表象が世界を構造化し主体を形成する、そのメカニズムと限界を問い続けることが、このチャートの示すところのものである。</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="afterword">
+      <summary><span class="aw-arrow">▶</span>遍歴</summary>
+      <div class="afterword-body" style="padding:0">
+
+    <details class="afterword" style="border-top:none">
+      <summary><span class="aw-arrow">▶</span>ポストモダンの陽気な目茶苦茶への季節外れな独学応接</summary>
+      <div class="afterword-body">
+        <p>分子生物学科に在籍していたものの、二年次以降授業はほとんどでなくなり、アパレルメーカーで２年ほど販売に従事。そのなかで、ファッションではANREALAGE、THEATRE PRODUCTS、CICATA、Post Overallsなどのブランドを好むようになる。営業中に店舗でかけられていた音楽をきっかけに、六本木のイエローなどのクラブハウスやサマーフェスに行くなかで、NujabesやSpecial Others、佐藤タイジ、Pe'zmoku、DJ Kentaro、Daishi Dance、Capsule、MADEMOISELLE YULIA、その他ハウス・テクノを脈絡なく聴き知るようになる。また空間とその演出がこの身体に与える効果、あるいはそれに対する身体の反応に興味をもつようになる。なかでも吉岡徳仁の作品に衝撃を受け、都内の美術館（なかでもワタリウム美術館が好きだった）に足しげく通うようになる。</p>
+        <p>アパレルを退社し、学部を休学して、美大受験のため美大予備校に通いはじめる。東京藝大一本で勝負するも受験に失敗。その過程で芸術家や美術家、建築家の書籍を読むようになる。それらの読書の過程でいわゆる「批評」の存在を知り、がぜん興味を持つようになる。「批評空間」や「ニューアカ」といったあたりから乱読を開始。小林秀雄の全集や九鬼修三全集、ベルクソンの翻訳や研究書、アフォーダンス論や郡司ペギオ幸夫、フランス現代思想、その他、小泉義之や絓秀実と田中純、等々の多くを買ったり借りたりで読み漁る。ゼロ年代批評の議論も一部追いかけはしてみたが、いわゆる当時のオタクコンテンツに縁がない人生だったこともあり離脱した。</p>
+        <p>転学部先ではウィトゲンシュタイン以後の言語哲学や分析哲学、３N哲学を研究する学生が多く、それらの議論にも首を突っ込むも、徐々に表象文化論的な方向へと読書が集中していく。ジョルジュ・ディディ＝ユベルマンの『イメージ、それでもなお』に端を発する表象不可能性の問題に関心を持つようになる。</p>
+        <p>学士論文はこの表象不可能性の問題、『イメージ、それでもなお』の読解を希望したが、指導教官からは古典的な思想史へ立ち返ることを助言される。精神分析、とりわけジャック・ラカン（というか正確には樫村晴香）に激烈な影響を受けていたこともあり、ラカンが言及している思想家に注目。そこでジェレミー・ベンサムの言語論をラカンが論じていることを知り、ベンサムの言語論読解を行った。</p>
+        <p>大学院では、「世界」が視野に入り、おおよそ現在と同じような世界地図も作成され、「歴史」や「経済」といったものが学的対象としても自律してくる18世紀に惹かれ、ベンサムの思想形成に影響を与えたエルヴェシウスの研究を志した。博士課程を中退後、嘉戸一将『主権論史』を読み、激烈な衝撃を受けてルジャンドルに傾倒。主権や制度と主体形成、端的に言えば規範と疎隔の問題にたどり着く。</p>
+ 
+      </div>
+    </details>
+
+    <details class="afterword">
+      <summary><span class="aw-arrow">▶</span>わたしは牛であった――震災の経験</summary>
+      <div class="afterword-body">
+        <p>表象の議論に徐々にひかれていったことの決定打は、震災の経験であった。</p>
+        <p>春休みで実家に帰省していたときに東日本大震災に被災した。福島で、図書館にいたときのことだ。原発がメルトダウンし放射能が風で拡散している最中、なにも知らぬ（知りたくても手段がない）まま物資を求めて方々を歩いていた。続く余震と緊急地震速報とで三半規管等も狂っていたのだろうか、止まっているはずなのにずっと揺れている感覚に襲われ、耳鳴りのように地震速報の幻聴が響き、存在が根底から揺らいでいた。安全地帯にいて「揺さぶる／揺さぶられる」のは心地が良いだろうし、それゆえに比喩としてよく用いられているが、現場でのそれは文字通り生きた心地がしない、二度と味わいたくはないものだった。しかし埼玉に戻ると、まったく異なる日常が営まれており、困惑せざるをえなかった。それでも都内ではデモが行われているらしいと知り、新宿に出向いて参列しもした。その夜、柄谷行人が壇上にあがるも、前置きはいらねえ！早くしろ！と聴衆にせかされて、あの有名（？）な一言を発したこと<sup>＊1</sup>、そして聴衆の再度の熱狂、それを覚えていることだけは、ここに書きとどめておこう。そして同時に、否定するでも肯定するでもなく、わたしはそこから離れたこともまた。</p>
+        <p>余震の揺れと警報音が肉体に沁みつき、福島から埼玉へ、当事者（被災者）から非当事者へ、あの体験を自分のために表す言葉も、あるいはそれに準ずるなにものをも見つけられない。そんなとき、埼玉大学に小出裕章先生を読んで講演をしていただくことになり、その会場の手伝いをすることになった。講演で最後にスクリーンに小出先生が映し出した、たった一枚の写真がある。それは原発に程近い地域で誰もいなくなったかの地の道路ど真ん中を牛が歩いているものだった。あ、私だ――それがすべてだった。</p>
+        <p>あのイメージに出会ってから、少しずつことばを紡ぐことができるようになった。物語というのではない。フラッシュバックしてくるものに、少しずつことばをあてがうような。ひとはそれを散文詩のようなものだと言うかもしれない。野蛮だとさえ言う（言った）だろう<sup>＊2</sup>。野蛮でよい、わたしは牛なのだから。牛の詩が世界を変えることはない――「わたしの詩は世界を変えないだろう」（パトリツィア・カヴァッリ）<sup>＊3</sup>。それでもなお、いやだからこそ、わたしは生きていられるのだろう。いつかわたしを見かけたときは、「牛がいるね」<sup>＊4</sup>とお声がけください。</p>
+        <div class="footnotes">
+          <sup>＊1</sup>　<span style="font-style:italic">「デモをすることによって社会を変えることは、確実にできる。なぜなら、デモをすることによって、日本の社会は、人がデモをする社会に変わるからです」</span><br>
+          <sup>＊2</sup>　世間では、アドルノのあの文句をもじって喧しく倫理が盛況だったことも、書きとどめておこう。出版業界も助かったことだろう。<br>
+          <sup>＊3</sup>　全体訳は下記の通り。<br>
+          <span style="display:block;padding:0.6em 0 0.6em 1em;font-style:italic;line-height:2">誰かがわたしに言った／きっとあなたの詩は／世界を変えないだろうと<br>わたしは答える、そうきっと／わたしの詩は／世界を変えないだろう</span>
+          See, Patricia Cavalli, <em>Mes poèmes ne changeront pas le monde</em>, Préface par Giorgio Agamben, Trad. de l'italien par Danièle Faugeras et Pascale Janot, Paris, Antoinette Fouque, 2007, p. 17.<br>
+          <sup>＊4</sup>　宮崎駿『風立ちぬ』
+        </div>
+      </div>
+    </details>
+
+      </div>
+    </details><!-- /遍歴 -->
+
+  </div>
+</details>
+
+<details class="outer" id="writing">
+  <summary>書いたもの・話したこと</summary>
+  <div class="outer-body">
+    <div class="writing-section">
+      <div class="writing-section-title">論文</div>
+      <div class="writing-item">
+        <div class="writing-year">学士論文（2013）</div>
+        <div class="writing-title">「言語と快楽――ジェレミー・ベンサムにおける言語、美学、政治」</div>
+        <div class="writing-affil">埼玉大学</div>
+        <details class="afterword" style="margin-top:0.5rem">
+          <summary><span class="aw-arrow">▶</span>要旨</summary>
+          <div class="afterword-body">
+            <p>本論はベンサムの功利主義の基礎に、認識論的言語哲学としての「フィクション論」があることを論証する試みである。第一章では、『道徳と立法の諸原理序説』を 18 世紀趣味論の文脈に置き、「関心 interest」概念の思想史的変遷（デュボス、ハチスン、ヒューム、スミス）を経由して、ベンサム道徳論を「脱-関心の感性学」として再定位する。第二章では『言語学試論』を読解し、原初の「全一命題」の分解という起源神話を起点に、言語の自己改良的傾向＝自己超越の論理によって人間が動物から分かたれるという議論を抽出する。第三章では『存在論断章』を読み、リアル／フィクションの二項対立を、「実体 entity」概念を装置として導入することで内破させる。「存在」自体がフィクション的実体であるという逆説に至る一方、ベンサムは「原型イメージ抽出法」と「言い換え法」によって快苦を言語化し、功利計算を可能にする技法を編み出した、と結論する。</p>
+          </div>
+        </details>
+        <details class="afterword">
+          <summary><span class="aw-arrow">▶</span>自己評——現在からの振り返り</summary>
+          <div class="afterword-body">
+            <p>10万字にのぼる論文で多岐にわたる論点を一挙に扱おうとするあまり、自身の解釈枠組み（脱-関心、自己超越、差延、脱構築）とベンサムのテクスト自体との距離を、論理的に管理しきれていない。「論者がベンサムに何を読み込んでいるか」と「ベンサムが何を述べているか」のレイヤーを可視化し腑分けして論じきることができれば、修士論文以上になった可能性はあるが、そのように丁寧に腑分けしていったところで本論の主張が維持できるものかどうかもまた疑わしい。現代思想の道具立てを援用するのはいいが、アナクロニズムかつ強引な議論となり、飛躍も多々見受けられる。その意味でも「卒論」の域はでないが、その後の自分の関心領域をすでにカバーしているという意味では、草野の原点にある問題意識を素描していたと位置づけることはできるであろう。</p>
+          </div>
+        </details>
+      </div>
+      <div class="writing-item">
+        <div class="writing-year">修士論文（2017）</div>
+        <div class="writing-title">« Le corps pour et contre l'éducation chez Helvétius »</div>
+        <div class="writing-affil">京都大学</div>
+      </div>
+    </div>
+    <div class="writing-section">
+      <div class="writing-section-title">講演</div>
+      <div class="writing-item">
+        <div class="writing-year">2025</div>
+        <div class="writing-title">「教科開発学研究成果の社会還元――メディアは研究成果をどうみているのか」</div>
+        <div class="writing-affil">第16回教科開発学研究会於静岡大学・対面／愛知教育大学・オンライン</div>
+        <details class="afterword" style="margin-top:0.5rem">
+          <summary><span class="aw-arrow">▶</span>要旨</summary>
+          <div class="afterword-body">
+            <p>本講演は、教科開発学の研究成果を「社会還元」する手段として出版というメディアを論じたものである。出版業界の三者構造（出版社・取次・書店）と再販制度・委託配本制度、ネット書店による価格構造の変容、資源コストの高騰といった現状を概観したのち、研究成果をあえて紙の書籍として出版することの固有の意義を論じる。リポジトリへの論文公開との対比を通じて、書物が「社会的承認」「固定と公共性」「越境の場」という三つの機能を同時に実現する形式であることを論証する。また科研費「出版費」と日本学術振興会「研究成果公開促進費（学術図書）」を軸に出版助成制度を解説し、企画の「必然性・社会性・資産性」からなる三原則と九つの評価軸を提示する。さらに企画立案から校了・刊行に至るプロセスを実務的に解説し、「越境」——概念の再配置・読者層の拡張・学際的接続——を通じて研究成果が「社会的議論の呼び水」へと転換される過程を、具体的な編集事例とともに論じる。</p>
+          </div>
+        </details>
+        <details class="afterword">
+          <summary><span class="aw-arrow">▶</span>自己評——現在からの振り返り</summary>
+          <div class="afterword-body">
+            <p>本講演の最大の特徴は、編集者自身の研究歴（「利害関心」概念史）を導入として置き、「関心の方向転換」という概念を編集という行為の核に接続している点にある。これにより自己紹介が単なる経歴紹介を超え、講演全体の主題を前景化する装置として機能している。出版業界論は現状分析として堅実であり、価格決定の外部性（内容ではなく紙代・流通コストが価格を規定する）という指摘は、研究者が出版を検討する際に見落としがちな論点を突いている。書物のモニュメント性をめぐる論述は、グローバルサプライチェーン・有限性の哲学・マクルーハン的メディア論を交差させ、「なぜ本か」という問いに対する思想的な深みのある回答を与えている。課題を挙げるとすれば、「越境」の概念がキャリア論企画と目次改訂の二例で示されるものの、教科開発学という本講演の文脈に即した具体例が存在しないため、聴衆にとって自身の研究への接続がやや抽象的に留まる点である。聴衆が研究成果の発信に向けて主体的に動き出すための、より直接的な「次の一手」を示す展開があれば、実践的な完成度はさらに高まったであろう。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+  </div>
+</details>
+
+<details class="outer" id="fragments" open>
+  <summary><ruby>牟言芻鳴<rt>ぼうげんすうめい</rt></ruby></summary>
+  <div class="outer-body">
+
+    <details class="afterword">
+      <summary><span class="aw-arrow">▶</span>シリーズ創刊に寄せて（ボツ案、2025）</summary>
+      <div class="afterword-body">
+        <p>近代世界システムの臨界点を示すかのような動向が陸続と生じている。イスラム原理主義の台頭と頻発するテロ、コロナ禍でも堅調なイスラム経済、Brexit、オルタナ右翼旋風、中露の覇権主義、イラク戦争以来続く中東の動乱、ウクライナ侵攻、凄まじい経済格差、ノーディベートのキャンセルカルチャー、トランプの再選とドイツ保守野党の政権復帰、そして「停戦」の名の下の大規模空爆――「人間は天使でも獣でもないのに、不幸なことには、天使の真似をしようとして獣になる」（パスカル）。</p>
+        <p>　経済自体が社会の主要な審級に登録され、当の経済が実体から遊離し苛烈に加速するその速度に訓練されて、ヒト・モノ・カネ・情報がボーダレスに飛び交い、競い合っている。今日、社会はとかく気忙しい。渦中にあって人々は、アイデンティティの分散再編を器用に乗りこなし、「推し」合い圧し合い、次々に様々な「ノリ」を「観光客」さながら渡り歩く。かように加速のなかでの振舞いを人々は学習し、速度の快楽を享受しているように見えるのは、テクノロジーがその形状を変化させ、イデオロギーなどお構いなしに視聴覚的な回路を通じて人間精神と結合し、情報処理様式を強引に改造することで消費文化との「共進化」を可能にしたからかもしれない。それにしても、各分人を「所有」しマネジメントするメタな私とは何者か。分人を所有する私を所有するテクノロジカルな他者についての不穏なる懐疑が湧出する。しかしそれもつかの間、瞬く間にその疑念は速度の見えざる手に攪拌され、見通しの効きすぎたその視野には再びあらゆる差異が横溢し、不可視のフィルムに包まれた健忘の日常が取り戻される。</p>
+        <p>このテクノロジカルな認知機構の改造に、あるいは日々の「その場しのぎ」の訓練に、やたらケアと気配りと共感が求められる「母性のディストピア」に、焦がれ擦り切れ倦んで脱落しゆく者たちもいる。今日の社会にいたっては、性急で独断専制的な意思決定が「白黒はっきりしていて、一貫性があって気持ちが良い」「スピード感と揺るがない覚悟とパワーを持った」ものだと称揚される。たしかに、社会の速度に反比例して、日々のコミュニケーションで他者の個別具体に配慮する余裕は擦り減るため、増大する認識コストを縮減する基準がどうしても求められる。能力といった抽象的価値基準は気忙しさのなかで認識に休む口実を与えるからこそ重宝され延命している――「認識的不正義」が暴かれ、「能力主義」の生きづらさを「ケアでほぐす」というリラクゼーション的修辞が世界を減速するならいいのだが。構築された現実の抑圧性もさりながら、構築された現実への過激な批判が転じて抑圧と離反をも生む今日。幾多の「正しさ」の焦土で迫り上がるナラティヴ・ファーストな時代の趨勢に対し、「ケアの倫理」の先の「この国のかたち」はいかなる姿をとりうるのか。とるべきではないとして、脱落の先になにがあるのか。</p>
+        <p>さもなくば、加速し続ける流動化の波に煽られ耐えきれなくなった精神の不安は、「たまたま、この世界に生まれて」過ごす運命と不条理を耐え忍ぶほかない者たちの絶望は、攻撃的な気分のもとに圧縮され、そこかしこで不意に噴出し、自己の拠り所となる存在理由を求めて、抽象的な価値基準や、その切片的翻訳物、そして語りのアウラを提示体現する商品演者を、強く欲望し続ける。</p>
+        <p>新旧メディアの相対的な退潮と興隆によって、かつて夢見られた〈公共〉は「砕け散り」、文化（文学／SNS）空間そのものが政治闘争の主舞台へと変奏された。技術環境の変容は個人的のみならず社会的な学習のバイアス構造そのものを組み替え、高刺激性や同調性をもつ情報が急速に優位化する進化的選択環境を生み出している。渦中にあって、ロマン主義的想像力から生まれた「自己幻視的ヘドニズム」――近代消費社会を駆動してきたあの精神は、この新しい選択環境のなかでどのような変容を遂げているのか（いないのか）。</p>
+        <p>この進化的変容のなかで、アイデンティティポリティクスへの傾斜は、とりわけ社会体の再生産可能性の危機を政治的問題として十分に受肉させ、中間層の不安を吸収しえただろうか。その空洞部分において、政治を経営するスピード感あるリーダーを神輿に宗教右派とテクノリバタリアンは手を結び、古色蒼然たる文化価値とテクノロジーは、互いに相手を口実にして、聖なるものの徴であるアウラ的な次元をテクノロジカルに操作し、その祭祀的な説得力を反復準備する、そんな事態が出来している。かくしてデジタル・レトリック（アルゴリズムに適応した情動的言論技法）によってかの空白は効率的にジャックされ、欲望と帰属の構造に深く作用する新たな文化進化の回路が築き上げられているようにも見える。</p>
+        <p>資本主義が消費社会の様相を呈し加速し始めた時代から今日まで、長く影を引く近代の以上のような問題系を考えるべく、現代の古典を日本語で再起動する。正しさへの信が最後の輝きを魅せたのち反転し攻撃性へと転じるなかで、時間をかけることの価値がこのうえなく下落し、読書の認知負荷が相対的に極めて高まった今日にあって、解決ではなく思考を促さんとする叢書に何がなしうるのか。思想的尖鋭性と批判的厚みを備えたこのシリーズが、単なる古典の再訪ではなく、新たな思考を促す「今こそ読むべき書」として触発の契機となることを願って――あなたはいつか、この叢書を見掛ける。</p>
+        <p style="text-align:right;font-size:13px;color:#888;margin-top:1em">2025年　琵琶湖疎水の麓から</p>
+      </div>
+    </details>
+
+    <details class="afterword">
+      <summary><span class="aw-arrow">▶</span>劇団四季『ノートルダムの鐘』観劇（2019）</summary>
+      <div class="afterword-body">
+            <p>すごいものをみてしまった。腰が抜けてしばらく呆然としてしまった。</p>
+            <p>十字架に縛られて火刑に処される最中カジモドに救出するもこと切れるエスメラルダ、その瞬間を片手の動きだけで表現したところではハッと息を呑み、その彼女をカジモドが抱きかかえて立ち客席に向いたときの様は、ミケランジェロのピエタ像をありありと彷彿させる美しさだった。見事な記号の逆転。</p>
+            <p>寺元さんが舞台で怪物カジモドに転じた瞬間からもう圧倒されていた。祝祭にカジモドが向かうときにさらっとボロではあるが赤の羽織を着せる色の記号の行く末は劇中ずっと追いかけていた。赤は権力者を示す記号でもあるからだ。また、カジモドがフィーバスとともにエスメラルダを探して奇跡御殿へと向かうときの路地の表現の仕方や、カジモドが火刑に処されるエスメラルダを救うべく人の間を縫って駆けていくときの表現の仕方、ジプシーの蜂起と警備隊との衝突から聖堂へ押し寄せたとき、煮えた鉛の入った大鍋をぶちまけるシーンの布と照明の演出など、大変に見事だった。そしてたった一度だけ登場するルイ11世の演出も興味深いものだった。原作ではルイ11世は監禁を彷彿とさせるようなイメージで表現されている。城壁沿い＝パリの境界線上のバスティーユの暗い部屋で、醜く体を折ったたひどくみっともない格好で、服装も黒でボロボロの、膝も内側に曲がったジジイである。つまり赤毛でＸ脚のカジモドそっくりなわけだが、カジモドはといえば赤く燃え盛る大聖堂と一体化している。対して『ノートルダムの鐘』では赤のビロード（？）でファーのついた優雅なローブを羽織って恰幅は良いのだが、いかんせん背の小さい、言ってしまえばずんぐりむっくりの、滑稽さも感じさせるような出で立ちで、背の高く体格の良いフロロと並び立つとどちらが「上」かは明瞭、しかも一言二言でルイはフロロの手駒であることが表現され、フロロが表地は黒だが裾に覗かせる裏地の赤のローブを着ていることで、その意味は嫌でも感得させられる。そしてこれきりルイ11世は舞台から消し去られる。舞台で繰り広げられる司祭＝警備隊と民衆＝ジプシーの抗争に、王の居場所はないと言わんばかりだ。ではその抗争の行方は？たしかにカジモドによって司祭フロロは葬られるが、そもそもカジモドは聖堂に押し寄せる警備隊とジプシーともどもめがけて煮え鉛を放つ点で、なし崩しにしたようにも見える。</p>
+            <p>そしてこのアダプテーションで最大の難問は、ユゴーの描くノートル＝ダム大聖堂をどう表現し体験させるかだろう。外観を眺めることもできないし聖堂内部を歩き回って眺めることもできないからだ。しかしだからこそのミュージカルだったのだと思う。ユゴー曰く、ノートル＝ダムは「巨大な石造の交響楽」であり、「一定の建築様式にきちんとくり入れられるような建物ではけっしてない」「複雑な統一を見せ」る「過渡的様式の建築」である。言い換えればノートル＝ダムは都市的現実を体現する多声的な建築なのだ。ミュージカルが換わってその多声性を見事なハーモニーへと奏であげるとき、それはエスメラルダを想う三者がそれぞれの一見すると不協和な心情が歌い上げられると見事に協和する瞬間であり、にもかかわらず一つ一つの声と想いが掻き消されずに観る者の魂を揺さぶる瞬間であり、そのときまさに聖堂が体験されるのではないかと思った（もちろんこれだけに限らないが）。観れてよかった、本当に。</p>
+      </div>
+    </details>
+
+    <details class="afterword">
+      <summary><span class="aw-arrow">▶</span>ジャガイモを食べることについて語るときに僕の語ること（2015）</summary>
+      <div class="afterword-body">
+            <p>鞭打たれる馬が視界に入るや否や駆け出し、その馬の首を抱きかかえ涙にくれたニーチェ。その後彼が発狂したことはよく知られている。かたや、馬のその後を知る者は誰もいない……。こうしてはじまるタル・ベーラ監督作『ニーチェの馬』では、強風の吹きすさぶ荒涼とした土地の一軒家で、馬の持ち主である農夫とその娘が、なにを話すともなく、茹でたジャガイモだけを食すシーンが延々と描かれる。寂寞としたその映像のなかで白さを際立たせていたジャガイモが、いまでも残像のように脳裏に蘇る。このとき、ジャガイモはわたしにとって異化された存在へと姿を変えたのかもしれない。いわば、わたしはジャガイモに映画的に「出会った」のだと思う。</p>
+            <p>このジャガイモ描写に魅せられて、一時期西欧におけるジャガイモの歴史を紐解いてみたことがある。するとなんと、ジャガイモはもとはといえば人間の食べるものではなく、家畜の餌だったらしい。そんな時代から、ジャガイモは人間の食べ物だという意識ができていく現場に遡ってみること、いわばジャガイモと今度は「歴史的に」出会ってみることが、当時わたしが試みた一つであった。</p>
+            <p>そのとき読んだ本は、たとえば山本紀夫『ジャガイモのきた道——文明・飢饉・戦争』、ラリー・ザッカーマン『じゃがいもが世界を救った——ポテトの文化史』、伊藤章治『ジャガイモの世界史——歴史を動かした「貧者のパン」』、などである。これらの本を読むと、家畜の餌にすぎなかったジャガイモを、人間も食べて良いものとしたのは、パルマンティエだとされている。いまだに「パルマンティエ風◯◯」として料理名に残るくらい、このパルマンティエなる人物はジャガイモの普及に貢献したようだ。</p>
+            <p>しかし、今回取り上げるのは、その有名なパルマンティエではない。ジャガイモ普及に携わった「もう一人」の人物であるミュステルである。彼の功績を、18世紀フランスにおけるジャガイモ受容を支えた言説空間（メディア）を通して見ていきたいと思う。</p>
+            <p>18世紀フランスにおける主要都市の一つルーアンは、1744年から科学、芸術、文芸のアカデミーを抱え、1761年には農業協会が設立された。その知的活動のメディア媒体として、「南北ノルマンディからの様々な広告、掲示、意見」という週刊誌が1762年に創刊される。この媒体がジャガイモを取り巻くプロパガンダとしてその役割を果たすこととなる。</p>
+            <blockquote style="margin:1em 2em;font-style:italic;line-height:2;font-size:13px;color:#333">富裕層の方々に、我が農業協会の尊敬すべき人物が、彼の土地で行ったばかりの実験の数々について至急お知らせいたしします。彼はそこでサツマイモやジャガイモを栽培してきたのですが、首尾よくいって、4分の1エーカーの平凡な土地がそれら25キンタルもの収穫を生み出したのです。［……］この尊敬すべき市民は、この最初の試みでは飽き足らず、実験によって、ジャガイモからなしうるあらゆる使い道を見ようとしました。［……］それゆえ、読者の皆様や主任司祭様方、貴族領主の方々や、さらには農民の皆様までもが、この豊富な新しい源泉にいま少し注意してみていただきたいと望んでもよいことでありましょう。というのも［……］それによって不幸な人々を労せず楽に救えるに違いなく、その数は、食糧難の厳しい時期であればとりわけ、十分すぎるほどのものとなるのですから。</blockquote>
+            <p>これは当時のノルマンディの首都ルーアンで、1767年1月30日付の週刊誌『南北ノルマンディからの様々な広告、掲示、意見』に掲載された、ジャガイモの有用性を伝える記事だ。それにしても、17世紀初頭にオリヴィエ・ド・セールって人が伝えてからこのかた、18世紀に至るまで、「腹にガスが溜まる」「らい病になる」といった偏見を伴って嫌悪されてきたのがジャガイモのはずである。18世紀の知の集大成である『百科全書』のなかですら、その編者の一人であったドニ・ディドロが、1765年版で「しかしこの塊茎は、どんな風に調理しようとも、味気がなく崩れやすい。ジャガイモが好まれる食材に数えられることはおそらくないであろう」と書きつけるほどだ。上の引用に見られるようなメディアの態度変化には、どんな理由が考えられるだろうか。飢饉や食糧不足というだけでは、答えとしては片手落ちである。</p>
+            <p>それを知る糸口として、ここで言及されている人物とは誰なのか、と問うことにしよう。わたしたちはすぐさま、先に紹介した、ジャガイモの第一人者として知られるパルマンティエのことを想起するだろう。三等薬剤師として七年戦争に従軍した際、捕虜となったときに食べさせられたジャガイモに啓発されてジャガイモ研究および普及に専心した、あのパルマンティエだ。しかし、パルマンティエが論壇にデビューするのは、ブザンソン・アカデミーが1772年に募集した懸賞論文である。だから、パルマンティエ以前にメディアを賑わせた重要なジャガイモ研究者がいることになる。それは誰か。それが、フランソワ＝ジョルジュ・ミュステルである。彼もまた、軍人としてキャリアを積み、戦地を視察した際の経験から、引退後ジャガイモ栽培研究に勤しむことになる。そのミュステルは当時、ルーアンのサン＝スヴェール街に数年来住んでおり、そこでジャガイモ栽培と実験を行い、得られた様々な知見を、ルーアン農業協会会長であるマルキ・ド・リメジーに伝えていたという。そして同年の3月26日に、農業協会でミュステルはジャガイモ栽培と利用法に関する発表をおこない、翌週には、彼の方法に基づいて作られた「節約パン」ことジャガイモパンが知識人たちに振る舞われ、好評を博したのだった（ちなみに、節約パンは英語で言うと「エコノミカル・パン」なので、今風に略すせば「エコパン」とでもなるだろうか）。</p>
+            <p>こうした一連の出来事がメディアによって宣伝されることで、一気にジャガイモへの関心が高まり、ミュステルの発表は同年に『ジャガイモおよび節約パンに関する論文』として出版され、農業協会の会員に任命されることとなる。ところで、ミュステルは「節約パン」と言っていた。それは文字通りパンで、ジャガイモからパンを作ろうとする試みであった。この論文のなかでミュステルは次のように述べている。</p>
+            <blockquote style="margin:1em 2em;font-style:italic;line-height:2;font-size:13px;color:#333">ジャガイモと小麦粉でパンを作ろうと思って以来、デュアメル氏の著作はこの野菜から真っ白な粉を引き出すことができ、小麦粉と同じ使い方ができるということをわたしに教えてくれた。［……］だが、そもそも水っぽく脆いこの野菜を粉末にするにはどうすればいいのかを理解するのは容易いことではない。おそらくそれは、その実体と性質の多くを失うまでジャガイモを乾燥させることによってしかできないであろうと思われるに違いない。だがわたしは、乾燥に不都合なものや生の部分、製粉機には邪魔なものをあえて残すという方法で、ジャガイモの新鮮さとエキスをなんら失うことなくジャガイモでパンを作った。</blockquote>
+            <p>ミュステルの着想の源泉にあるデュアメルの著作とは『農業の諸要素』（1762）である。そこでは確かにジャガイモ粉の製造、およびそれによるパン製造が可能であると記されている。だが、その製造方法をデュアメルはまったく記していない。だからこそ、ミュステルの知的好奇心をかき立てることとなった。ミュステルは小麦粉なしのジャガイモのみのパンを本当は作りたかったのかもしれない。しかし、それはおそらくできなかったのだろう。せめて小麦粉のカサ増し役になればよしと考えたのだと思われる。実際、麦の不作に喘いでいた当時の状況を鑑みればそれだけでもありがたいものとなったはずだ。試行錯誤を繰り返すなかで、ミュステルは「生の部分をあえて残す」独自の方法を考案するものの、それに見合った器具がなかったため、逆さ鉋のような、縦24cm×横16cm×厚2cmで4本の脚がついたものを製作したと言う。その器具を使って得られたジャガイモ粉を小麦粉と混ぜ（割合は2：1ないし1：1）作られる「このジャガイモパンは強い加熱を要しないため、窯を温める必要もない。それは一種の節約である」と彼は記してもいる。知識人たちに振る舞われたパンとは、この「エコパン」だったのだ。</p>
+            <p>メディアのジャガイモ・プロパガンダは賛否両論を巻き起こすこととなった。ジャガイモは医学的に害があるのではないかといった相変わらずの疑念をはじめ、様々な批判とそれに対する応答がメディア上でなされ公開され、議論された。それがひと段落したところにパルマンティエが現れる。</p>
+            <p>ミュステルの側からすれば、パルマンティエはミュステルのお株を奪ってしまった憎っくき相手、というわけだ。ジョルジュ・ギボーが伝えるところによれば、ミュステルは1779年にルーアンの当局に手紙を送り、パルマンティエの「発見」に異議を唱えたという。当然パルマンティエも黙ってはおらず、同年の『小麦粉を混ぜずにジャガイモからパンを作る方法』で反論をする。その事の次第も大変興味深いのだが、長くなるので割愛する。</p>
+            <p>ザッカーマンが記しているように、1761年には財務総監テュルゴーが農夫たちの前でジャガイモを食すというパフォーマンスをやってのけている――昔も今もやることは変わらないようだ。このパフォーマンスがなされる少し前には、デュアメル・ド・モンソーが『イギリス人、タル氏の原理に基づく土地耕作論』（1751）を記し、1758年にはケネーが『経済表』を出版して、重農主義思想が開花していた時期である。農業協会は、ケネーら重農主義思想に影響を受けた官僚側が、主要都市に設立したものでった。農業協会には高級役人や貴族が任命され、そこで様々な議論や実験がなされたほか、地方三部会や高等法院、街のサロンなどでも、多くの知識人や大地主たちが農業問題で議論に花を咲かせていた。「1750年頃、詩、喜劇、悲劇、オペラ、小説、空想物語、人生訓、ジャンセニスムや恩寵についての神学論争に熱中していた国民は、とうとう穀物について論じはじめた。ぶどうのことさえ忘れて、小麦やライ麦のことを話すのである。農業について有用なことも書かれた。皆がこれを読んだ。ただし、農民は除いて。オペラ劇場から出るときも、フランスには売るべき小麦があると議論したものである」、とはヴォルテールの言である。ジャガイモ「啓蒙」への官僚やアカデミーの積極的介入が以後行われてゆくことになるが、その背景には同時代の農業および「エコノミー」への関心の高まりもあった。以上のような動向は、「有用な科学」キャンペーンを張り統治へと関与してゆく科学アカデミーが、権力と足並みをそろえて、当時雑多な外延を有していた「エコノミー」の一つである「農村のエコノミー」にも介入してゆく過程、とも言えるだろうか。ミュステルの「エコパン」は、こうした街場の喧騒のなかに埋もれてしまったのかもしれない。</p>
+      </div>
+    </details>
+
+  </div>
+</details>
+
+
+<p style="font-size:11px;color:#aaa;text-align:center;margin-top:2rem;padding-top:1rem;border-top:1px solid #d0ccc5">※本ページは個人で作成・運営しているポートフォリオです。</p>
+</div>
+<script>
+function toggleAll(btn){
+  const all=document.querySelectorAll('details');
+  const anyOpen=[...all].some(d=>d.open);
+  all.forEach(d=>d.open=!anyOpen);
+  btn.textContent=anyOpen?'▼ すべて展開':'▲ すべて折りたたむ';
+}
+</script>
+</body>
+</html>
