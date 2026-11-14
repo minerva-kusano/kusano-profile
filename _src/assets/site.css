@@ -1,0 +1,348 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f5f3ef;color:#2a2a2a;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:15px;line-height:1.88}
+.W{max-width:760px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.site-header{border-bottom:2px solid #2a2a2a;padding-bottom:0.8rem;margin-bottom:1.5rem;overflow:hidden}
+h1{font-family:'Shippori Mincho',serif;font-size:22px;font-weight:500;color:#1a1a1a;letter-spacing:0.02em}
+.en-title{font-style:italic;font-size:13px;color:#666;margin-top:3px}
+.expand-all{float:right;font-size:12px;border:1px solid #1f5c20;color:#1f5c20;background:none;padding:3px 10px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;margin-top:4px}
+.expand-all:hover{background:#1f5c20;color:#fff}
+.intro-wrap{display:flex;gap:1.5rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #d0ccc5;align-items:stretch}
+.intro-left{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:space-between}
+.lead{font-size:14.5px;line-height:1.95;margin-bottom:0.9rem}
+.toc{background:#edecea;padding:0.7rem 1rem;font-size:13px}
+.toc-title{font-family:'Shippori Mincho',serif;font-size:13px;font-weight:500;margin-bottom:0.3rem}
+.toc ol{padding-left:1.2em;line-height:2}
+.toc a{color:#1f5c20;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.profile-card{width:200px;flex-shrink:0;font-size:12.5px;display:flex;flex-direction:column}
+.profile-img{width:100%;aspect-ratio:1;background:#ddd8d0;display:flex;align-items:center;justify-content:center;color:#999;font-size:12px;border:1px solid #ccc8c0;margin-bottom:0.6rem}
+.profile-img img{width:100%;height:100%;object-fit:cover;display:block}
+.profile-card table{width:100%;border-collapse:collapse}
+.profile-card th{text-align:left;color:#777;font-weight:400;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;font-size:11.5px;width:3.5em}
+.profile-card td{padding:3px 0;vertical-align:top;font-size:12px;line-height:1.6}
+.profile-card .sec{font-family:'Shippori Mincho',serif;font-size:11px;color:#aaa;padding-top:8px;font-weight:400}
+details.outer{border-bottom:1px solid #d0ccc5}
+details.outer>summary{font-family:'Shippori Mincho',serif;font-size:17px;font-weight:500;color:#1f5c20;cursor:pointer;padding:0.65rem 0;list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+details.outer>summary::-webkit-details-marker{display:none}
+details.outer>summary::before{content:'▶';font-size:10px;color:#1f5c20;transition:transform 0.2s;display:inline-block;flex-shrink:0}
+details.outer[open]>summary::before{transform:rotate(90deg)}
+.outer-body{padding:0.4rem 0 1.2rem 1rem;font-size:14px;line-height:1.95}
+.placeholder-text{color:#aaa;font-size:13px;font-style:italic}
+.history-text{font-size:14px;line-height:2;color:#2a2a2a}
+.history-text p{margin-bottom:1em}
+.history-text p:last-child{margin-bottom:0}
+.history-text a{color:#1f5c20;text-decoration:none;border-bottom:1px solid #a8c8a8}
+.history-text a:hover{border-bottom-color:#1f5c20}
+.work-label{display:inline-block;font-size:11px;background:#1f5c20;color:#fff;padding:1px 7px;margin-bottom:0.5rem}
+.work-label.prep{background:#888}
+.new-mark{color:#993C1D;font-size:0.82em;font-weight:500;white-space:nowrap;font-style:normal;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif}
+.genre-tag{display:inline-block;font-size:10px;border:1px solid #aaa;color:#777;padding:0 5px;white-space:nowrap;line-height:1.7;flex-shrink:0}
+details.book{border:1px solid #d0ccc5;background:#faf9f7;margin-bottom:0.6rem}
+details.book:last-child{margin-bottom:0}
+details.book>summary{display:flex;align-items:center;gap:8px;padding:0.55rem 0.8rem;cursor:pointer;list-style:none;user-select:none}
+details.book>summary::-webkit-details-marker{display:none}
+.book-arrow{font-size:10px;color:#1f5c20;transition:transform 0.2s;flex-shrink:0}
+details.book[open] .book-arrow{transform:rotate(90deg)}
+.book-title-text{font-family:'Shippori Mincho',serif;font-size:15px;font-weight:500;color:#1a1a1a;flex:1}
+.book-tags{display:flex;gap:4px;flex-wrap:wrap}
+.book-body{border-top:1px solid #e8e4de;padding:0.9rem 1rem;display:flex;flex-direction:column;gap:0.9rem}
+.book-top{display:flex;gap:0.8rem;align-items:stretch}
+.book-biblio{flex:1;font-size:12.5px;color:#666;line-height:1.85}
+.book-obi{flex:1;font-size:12px;line-height:2;color:#333;font-family:'Shippori Mincho',serif;border-left:2px solid #1f5c20;border-right:1px solid #e0ddd8;padding:0 0.7rem;display:flex;align-items:center}
+.book-obi-inner{width:100%}
+.book-cover{flex-shrink:0;width:88px;display:flex;align-items:flex-start}
+.book-cover img{width:100%;display:block;border:1px solid #ccc8c0;box-shadow:2px 2px 6px rgba(0,0,0,0.12)}
+.book-cover.dual{width:164px;gap:6px}
+.book-cover.dual img{width:79px}
+.book-cover-placeholder{width:100%;aspect-ratio:2/3;background:#ddd8d0;border:1px solid #ccc8c0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#aaa;text-align:center;line-height:1.5}
+.book-description{font-size:13.5px;line-height:1.95;color:#2a2a2a;padding-top:0.8rem;border-top:1px dotted #ddd8d0}
+details.afterword{border:none;border-top:1px dotted #c8c4bc;margin-top:0}
+details.afterword>summary{font-family:'Shippori Mincho',serif;font-size:13px;font-weight:500;color:#888;cursor:pointer;padding:0.5rem 0;list-style:none;display:flex;align-items:center;gap:6px;user-select:none}
+details.afterword>summary::-webkit-details-marker{display:none}
+.aw-arrow{font-size:9px;color:#aaa;transition:transform 0.2s;flex-shrink:0}
+details.afterword[open] .aw-arrow{transform:rotate(90deg)}
+.afterword-body{padding:0.8rem 0 0.4rem;font-size:13.5px;line-height:2.1;color:#2a2a2a;font-family:'Shippori Mincho',serif}
+.afterword-body p{margin-bottom:1.2em}
+.afterword-body p:last-child{margin-bottom:0}
+.afterword-body .divider{text-align:center;color:#aaa;margin:1.2em 0;letter-spacing:0.5em}
+.afterword-body .footnotes{font-size:12px;color:#888;margin-top:1.5em;padding-top:0.8em;border-top:1px dotted #ddd8d0;line-height:2}
+sup{font-size:0.7em;vertical-align:super;line-height:0}
+.book-buy{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding-top:0.8rem;border-top:1px dotted #ddd8d0}
+.buy-btn{display:block;font-size:11.5px;text-align:center;padding:6px 4px;text-decoration:none;border:1px solid #c0bbb4;color:#2a2a2a;background:#f5f3ef;line-height:1.4}
+.buy-btn:hover{background:#edecea;border-color:#999}
+.buy-btn.primary{background:#1f5c20;color:#fff;border-color:#1f5c20}
+.buy-btn.primary:hover{background:#174d18}
+.writing-section{margin-bottom:1.4rem}
+.writing-section:last-child{margin-bottom:0}
+.writing-section-title{font-family:'Shippori Mincho',serif;font-size:13px;color:#1f5c20;border-bottom:1px solid #c8d8c8;padding-bottom:3px;margin-bottom:0.6rem;font-weight:500}
+.writing-item{margin-bottom:0.9rem;padding-bottom:0.9rem;border-bottom:1px dotted #ddd8d0}
+.writing-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.writing-year{font-size:11px;color:#999;margin-bottom:2px}
+.writing-title{font-size:13.5px;color:#2a2a2a;line-height:1.7}
+.writing-affil{font-size:12px;color:#888;margin-top:2px;line-height:1.6}
+.writing-placeholder{font-size:12.5px;color:#bbb;font-style:italic}
+hr{border:none;border-top:2px solid #2a2a2a;margin:1.8rem 0}
+.fragment-list{list-style:none;padding:0}
+.fragment-item{padding:0.8rem 0;border-bottom:1px dotted #c8c4bc;font-size:14px;line-height:1.85}
+.fragment-item:last-child{border-bottom:none}
+.fragment-date{font-size:11px;color:#999;margin-bottom:3px}
+.fragment-placeholder{color:#aaa;font-size:13px;font-style:italic}
+
+@media (max-width: 600px){
+  .W{padding:1.2rem 1rem 3rem}
+  .intro-wrap{flex-direction:column-reverse}
+  .profile-card{width:100%;flex-direction:row;gap:1rem}
+  .profile-img{width:120px;flex-shrink:0;aspect-ratio:auto}
+  .profile-img img{width:100%;height:auto}
+  .book-buy{grid-template-columns:repeat(2,1fr)}
+  .book-cover{width:100px}
+  .book-cover.dual{width:126px;gap:4px}
+  .book-cover.dual img{width:61px}
+  h1{font-size:19px}
+}
+
+/* ---- 旧・直書きスタイルをここに集約 ---- */
+body .W .cell{border:1px solid #c0bbb4;padding:5px 7px;vertical-align:top}
+body .W .cell-h{border:1px solid #c0bbb4;padding:5px 7px;vertical-align:top;background:#edecea;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20}
+body .W .tbl{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.75;margin:0.8em 0}
+body .W .sec-h{font-weight:600;color:#1f5c20;margin-top:1.8em;margin-bottom:0.6em}
+body .W .mx-c{border:1px solid #c0bbb4;padding:6px 8px}
+body .W .sub{margin-left:1rem}
+body .W .muted{color:#888}
+body .W .sec-h-tight{font-weight:600;color:#1f5c20;margin-top:1.8em;margin-bottom:0.5em}
+body .W .mb1{margin-bottom:1em}
+body .W .sans-p{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-style:normal;font-size:13.5px;line-height:1.95;margin-bottom:1em}
+body .W .lead-p{font-size:14px;line-height:2;margin-top:1em}
+body .W .catch{font-size:15px;font-weight:600;line-height:1.8;margin-bottom:0.6rem;color:#1a1a1a;font-family:'Shippori Mincho',serif}
+body .W .no-top{border-top:none}
+body .W .mx-th{border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;text-align:center;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20}
+body .W .mx-rh{border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;font-family:'Shippori Mincho',serif;font-weight:500;color:#1f5c20}
+body .W .tbl-note{font-size:12px;color:#777;margin:0.2em 0}
+body .W .box-title{font-weight:500;color:#1a1a1a;margin-bottom:0.4rem}
+body .W .mb06{margin-bottom:0.6rem}
+body .W .btn-line{display:inline-block;font-size:12px;border:1px solid #1f5c20;color:#1f5c20;padding:5px 14px;text-decoration:none}
+body .W .link-g{color:#1f5c20;border-bottom:1px solid #a8c8a8;text-decoration:none}
+body .W .lead-p-first{font-size:14px;line-height:2;margin-top:1.2rem}
+body .W .mt05{margin-top:0.5rem}
+body .W .bq{margin:1em 2em;font-style:italic;line-height:2;font-size:13px;color:#333}
+body .W .updated{font-size:11px;color:#999;margin-bottom:0.3rem}
+body .W .box{font-size:12.5px;line-height:1.9;color:#555;margin-bottom:1.5rem;padding:0.8rem 1rem;background:#edecea;border-left:2px solid #1f5c20}
+body .W .topics{font-size:13px;line-height:2;color:#2a2a2a;margin-bottom:1.5rem}
+body .W .topics-title{font-family:'Shippori Mincho',serif;font-size:14px;font-weight:500;color:#1f5c20;margin-bottom:0.3rem}
+body .W .topics-note{font-size:11.5px;color:#888;margin-bottom:0.5rem}
+body .W .label-row{margin-bottom:0.4rem}
+body .W .label-row-2{margin-top:1.2rem;margin-bottom:0.4rem}
+body .W .others-prep{font-size:13px;color:#888;margin-top:1.2rem;margin-bottom:0.4rem}
+body .W .lead-p-intro{font-size:14px;line-height:2;margin-bottom:1.2rem}
+body .W .mx{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.8;margin-bottom:0.5rem}
+body .W .mx-corner{border:1px solid #c0bbb4;padding:6px 8px;background:#edecea;width:15%}
+body .W .mt14{margin-top:1.4em;margin-bottom:0.6em}
+body .W .mt16{margin-top:1.6em;margin-bottom:0.6em}
+body .W .fig-wrap{padding:0.5rem 0}
+body .W .fig-text{margin-top:1.4rem;font-size:13.5px;line-height:2;color:#2a2a2a;font-family:'Shippori Mincho','Hiragino Mincho ProN',serif}
+body .W .fig-title{font-weight:500;margin-bottom:0.8rem}
+body .W .pad0{padding:0}
+body .W .ital{font-style:italic}
+body .W .poem{display:block;padding:0.6em 0 0.6em 1em;font-style:italic;line-height:2}
+body .W .subtitle{color:#888;margin-bottom:1.4em}
+body .W .sign{text-align:right;font-size:13px;color:#888;margin-top:1em}
+body .W .box-bottom{font-size:12.5px;line-height:1.9;color:#555;margin-top:2rem;margin-bottom:1.5rem;padding:0.8rem 1rem;background:#edecea;border-left:2px solid #1f5c20}
+body .W .disclaimer{font-size:11px;color:#aaa;text-align:center;margin-top:2rem;padding-top:1rem;border-top:1px solid #d0ccc5}
+
+/* ==========================================================
+   2026年11月 改修：複数ページ化にともなって加えたもの
+   （上の部分は旧・単一ページのスタイルをそのまま引き継いでいる）
+   ========================================================== */
+h2,h3,h4{font-size:inherit;font-weight:inherit}
+img{max-width:100%}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:8px;top:8px;background:#fff;padding:4px 10px;z-index:10;font-size:13px}
+
+/* ---- 共通ナビ ---- */
+.gnav{display:flex;flex-wrap:wrap;align-items:center;gap:0.25rem 1.15rem;font-size:13px;line-height:1.9}
+.gnav a{color:#1f5c20;text-decoration:none;border-bottom:1px solid transparent}
+.gnav a:hover,.gnav a[aria-current="true"]{border-bottom-color:#1f5c20}
+.gnav a.cta{border:1px solid #1f5c20;padding:0 10px}
+.gnav a.cta:hover{background:#1f5c20;color:#fff}
+
+/* ---- トップのヘッダー ---- */
+.masthead{border-bottom:2px solid #2a2a2a;padding-bottom:0.8rem;margin-bottom:1.5rem}
+.masthead .who{font-size:14.5px;font-weight:500;color:#1a1a1a;letter-spacing:0.04em}
+.masthead h1{font-size:25px;margin-top:0.25rem}
+.masthead .scope{font-size:13px;color:#555;margin-top:0.55rem}
+.masthead .gnav{margin-top:0.8rem}
+
+/* ---- 下層ページのヘッダー ---- */
+.site-bar{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0.2rem 1.2rem;border-bottom:2px solid #2a2a2a;padding-bottom:0.55rem;margin-bottom:0.9rem}
+.site-bar .site-name{font-family:'Shippori Mincho',serif;font-size:16px;font-weight:500;color:#1a1a1a;text-decoration:none;letter-spacing:0.02em}
+.site-bar .who{font-size:11.5px;color:#777;margin-left:0.7em;white-space:nowrap}
+.crumbs{font-size:11.5px;color:#888;margin-bottom:1.3rem;line-height:1.7}
+.crumbs a{color:#1f5c20;text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{margin:0 0.45em;color:#bbb}
+
+/* ---- ページの題 ---- */
+.page-head{margin-bottom:1.5rem;overflow:hidden}
+.page-head .labels{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:0.45rem}
+.page-head .labels .work-label{margin-bottom:0}
+.page-head h1{font-size:23px;line-height:1.55}
+.page-head .in-series{font-size:12.5px;color:#666;margin-top:0.35rem}
+.page-head .in-series a{color:#1f5c20;text-decoration:none;border-bottom:1px solid #a8c8a8}
+.work-label.soon{background:#fff;color:#1f5c20;box-shadow:inset 0 0 0 1px #1f5c20}
+.kind{display:inline-block;font-size:10px;border:1px solid #1f5c20;color:#1f5c20;padding:0 6px;white-space:nowrap;line-height:1.7;flex-shrink:0;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-weight:400}
+
+/* ---- 章の区切り（トップ・章ページ） ---- */
+section.block{border-bottom:1px solid #d0ccc5;padding-bottom:1.3rem;scroll-margin-top:0.5rem}
+section.block>.sect{font-family:'Shippori Mincho',serif;font-size:17px;font-weight:500;color:#1f5c20;padding:0.65rem 0 0.35rem;display:flex;align-items:baseline;justify-content:space-between;gap:1rem}
+section.block>.sect a.all{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:12px;font-weight:400;color:#1f5c20;text-decoration:none;white-space:nowrap}
+section.block>.sect a.all:hover{text-decoration:underline}
+.block-body{padding:0.3rem 0 0 1rem;font-size:14px;line-height:1.95}
+.block-body>:first-child{margin-top:0}
+.subsect{font-family:'Shippori Mincho',serif;font-size:15px;font-weight:500;color:#1a1a1a;margin:1.6rem 0 0.6rem}
+.more{margin-top:0.9rem;font-size:13px}
+.more a,.back a{color:#1f5c20;text-decoration:none;border-bottom:1px solid #a8c8a8}
+.more a:hover,.back a:hover{border-bottom-color:#1f5c20}
+.back{margin-top:2.4rem;font-size:13px}
+
+/* ---- 行の一覧（→ で別ページへ） ---- */
+.rows{list-style:none;border-top:1px dotted #c8c4bc}
+.rows>li{border-bottom:1px dotted #c8c4bc}
+.rows a{display:flex;align-items:baseline;gap:8px;padding:0.55rem 0;text-decoration:none;color:#2a2a2a}
+.rows a::before{content:'→';color:#1f5c20;font-size:12px;flex-shrink:0}
+.rows .t{font-family:'Shippori Mincho',serif;font-size:14.5px;font-weight:500;line-height:1.7;flex:1;min-width:0}
+.rows a:hover .t{color:#1f5c20}
+.rows .note{font-size:11.5px;color:#888;white-space:nowrap}
+.rows>li.child a{padding-left:1.5rem}
+.rows-mix>.rows+details.afterword{border-top:none}
+.rows-mix>details.afterword{border-bottom:1px dotted #c8c4bc}
+.rows-mix>details.afterword>summary{font-size:14.5px;color:#2a2a2a;padding:0.55rem 0;gap:8px;line-height:1.7}
+.rows-mix>details.afterword>summary .aw-arrow{color:#1f5c20;font-size:10px;width:12px;text-align:center}
+.rows-mix>details.afterword+.rows{border-top:none}
+.fold-note{font-size:11px;color:#999;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-weight:400;white-space:nowrap}
+
+/* ---- 書影つきカード（トップ） ---- */
+.shelf{display:flex;flex-wrap:wrap;gap:1.1rem 1.9rem;margin-bottom:1.3rem}
+.shelf-group .work-label{margin-bottom:0.55rem}
+.cards{display:flex;gap:14px}
+.card{width:118px;text-decoration:none;color:inherit;display:block}
+.card .cv{display:block;aspect-ratio:200/286;background:#ddd8d0;border:1px solid #ccc8c0;box-shadow:2px 2px 6px rgba(0,0,0,0.12);overflow:hidden}
+.card .cv img{width:100%;height:100%;object-fit:cover;display:block}
+.card .bt{display:block;font-family:'Shippori Mincho',serif;font-size:13.5px;font-weight:500;line-height:1.5;margin-top:0.55rem;color:#1a1a1a}
+.card .bs{display:block;font-size:11px;color:#777;line-height:1.55;margin-top:2px}
+.card .ba{display:block;font-size:11.5px;color:#666;line-height:1.55;margin-top:4px}
+.card:hover .bt{color:#1f5c20}
+
+/* ---- 書籍の一覧（担当書籍ページ） ---- */
+.booklist{list-style:none}
+.booklist>li{border:1px solid #d0ccc5;background:#faf9f7;margin-bottom:0.6rem}
+.booklist>li>a,.booklist>li>.plain{display:flex;gap:0.9rem;padding:0.7rem 0.8rem;text-decoration:none;color:inherit;align-items:flex-start}
+.booklist .th{width:54px;flex-shrink:0}
+.booklist .th img{width:100%;height:auto;border:1px solid #ccc8c0;display:block}
+.booklist .bd{flex:1;min-width:0}
+.booklist .book-tags{margin-bottom:3px}
+.booklist .book-title-text{display:block;line-height:1.6}
+.booklist .bib{font-size:12px;color:#666;line-height:1.75;margin-top:2px}
+.booklist .go{color:#1f5c20;font-size:12px;align-self:center;flex-shrink:0}
+.booklist>li>a:hover .book-title-text{color:#1f5c20}
+.booklist.compact>li>.plain{padding:0.5rem 0.8rem;align-items:baseline}
+.series-of{font-size:11px;color:#888}
+
+/* ---- 書籍ページ ---- */
+.bookpage .book-top{gap:1.5rem;align-items:flex-start}
+.bookpage .book-cover{width:168px}
+.bookpage .book-cover.dual{width:300px;gap:8px}
+.bookpage .book-cover.dual img{width:146px}
+.bookpage .book-side{flex:1;min-width:0;display:flex;flex-direction:column;gap:1rem}
+.bookpage .book-biblio{font-size:13.5px;line-height:1.95}
+.bookpage .book-buy{grid-template-columns:repeat(2,1fr);border-top:none;padding-top:0;max-width:300px}
+.bookpage .book-description{font-size:15px;line-height:2;border-top:1px dotted #ddd8d0;padding-top:1.1rem;margin-top:1.3rem;max-width:41em}
+body .W .bookpage .catch{font-size:16.5px;margin-bottom:0.8rem}
+.part{margin-top:2.6rem}
+.part>h2{font-family:'Shippori Mincho',serif;font-size:17px;font-weight:500;color:#1f5c20;border-bottom:1px solid #c8d8c8;padding-bottom:4px;margin-bottom:1.1rem}
+.part h3.piece{font-family:'Shippori Mincho',serif;font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.7;margin:1.4rem 0 1rem;max-width:40em}
+.review{border-top:1px dotted #c8c4bc;padding:1rem 0 0.2rem;max-width:41em}
+.review:first-of-type{border-top:none;padding-top:0}
+.review h3{font-family:'Shippori Mincho',serif;font-size:14.5px;font-weight:500;color:#555;margin-bottom:0.5rem}
+.review .prose{font-size:15px}
+
+/* ---- 長文（1行およそ40字） ---- */
+.prose{max-width:40em;font-size:15.5px;line-height:2.05;color:#2a2a2a}
+.prose.mincho{font-family:'Shippori Mincho','Hiragino Mincho ProN',serif;font-size:16px;line-height:2.1}
+.prose p{margin-bottom:1.2em}
+.prose>p:last-child{margin-bottom:0}
+.prose .divider{text-align:center;color:#aaa;margin:1.2em 0;letter-spacing:0.5em}
+.prose .footnotes{font-size:13px;color:#888;margin-top:1.8em;padding-top:0.9em;border-top:1px dotted #ddd8d0;line-height:2}
+.prose svg{margin:0.4em 0 1.2em}
+body .W .prose .sans-p{font-size:inherit;line-height:inherit;margin-bottom:1.2em}
+body .W .prose .bq{font-size:0.92em;margin:1.2em 1.5em}
+body .W .prose .tbl{font-size:13px}
+body .W .prose .mx{font-size:13px}
+body .W .prose h2.sec-h,body .W .prose h2.sec-h-tight{font-size:1.04em;margin-top:2.2em;margin-bottom:0.7em;line-height:1.7}
+body .W .prose h3.sec-h-tight{margin-top:1.6em}
+body .W .prose .lead-p,body .W .prose .lead-p-first,body .W .prose .lead-p-intro{font-size:inherit;line-height:inherit}
+.prose a{color:#1f5c20;text-decoration:none;border-bottom:1px solid #a8c8a8}
+.prose a:hover{border-bottom-color:#1f5c20}
+.wide{max-width:none}
+
+/* ---- フッター ---- */
+.site-foot{margin-top:2rem;padding-top:1rem;border-top:1px solid #d0ccc5;font-size:11px;color:#aaa;text-align:center;line-height:2}
+.site-foot .gnav{justify-content:center;font-size:12px;margin-bottom:0.4rem}
+body .W .site-foot .disclaimer{margin-top:0;padding-top:0;border-top:none}
+.expand-all[hidden]{display:none}
+
+@media (max-width: 600px){
+  .masthead h1{font-size:21px}
+  .page-head h1{font-size:20px}
+  .gnav{gap:0.2rem 0.95rem}
+  .block-body{padding-left:0.6rem}
+  .shelf{gap:1.1rem}
+  .shelf-group{width:100%}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .card{width:auto}
+  .card .bt{font-size:12.5px}
+  .bookpage .book-top{gap:1rem}
+  .bookpage .book-cover{width:120px}
+  .bookpage .book-top.has-dual{flex-direction:column}
+  .bookpage .book-cover.dual{width:100%;max-width:300px}
+  .bookpage .book-cover.dual img{width:calc(50% - 4px)}
+  .bookpage .book-buy{max-width:none}
+  .prose{font-size:15px}
+  .prose.mincho{font-size:15.5px}
+  body .W .prose .bq{margin:1.2em 0.8em}
+  .tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .rows>li.child a{padding-left:1rem}
+}
+@media print{
+  .gnav,.expand-all,.skip{display:none}
+  body{background:#fff}
+  details>*{display:block}
+}
+
+/* 追補 */
+.work-label.series{background:#444}
+body .W .intro-left .box{margin-bottom:0}
+.page-head+.part,.page-head+.rows-mix{margin-top:0.4rem}
+.prose>*{max-width:40em}
+.prose{max-width:none}
+.prose>svg,.prose>table{max-width:100%}
+body .W .prose .lead-p,body .W .prose .lead-p-first{margin-bottom:0}
+body .W .prose .lead-p-first{margin-top:1.9em}
+.writing-item .afterword-body{font-size:15px;max-width:42em}
+.afterword-body>.prose{font-size:15.5px}
+.subsect+svg{margin-bottom:1.4rem}
+.bookpage>.book-biblio{font-size:13.5px;line-height:1.95}
+.intro-left{justify-content:flex-start;gap:1.2rem}
+.intro-left .lead{margin-bottom:0;font-size:15.5px;line-height:2}
+img{height:auto}
+.card .cv img,.profile-img img{height:100%}
+@media (max-width: 600px){.profile-img img{height:auto}}
+.booklist .plain .book-biblio{flex:0 0 auto;font-size:12px;white-space:nowrap}
+.booklist .series-of{display:block;line-height:1.6}
+.prose>.tbl-scroll{max-width:100%}
+@media (max-width: 600px){.tbl-scroll>table{min-width:560px}}
+.prose>.fig-scroll{max-width:100%}
+.fig-scroll{margin:0.4em 0 1.2em}
+@media (max-width: 600px){
+  .fig-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .fig-scroll>svg{min-width:600px}
+}
